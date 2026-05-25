@@ -102,7 +102,7 @@ export default function HomePage() {
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "1rem" }}>
             {family.map((f) => (
-              <div key={f.name} style={{ background: "#fff", padding: "1.5rem", borderRadius: 10, border: f.name.includes("BioLabs") ? "2px solid #3DA9C7" : "1px solid #E3E7EE", background: f.name.includes("BioLabs") ? "#f4fafc" : "#fff" }}>
+              <div key={f.name} style={{ padding: "1.5rem", borderRadius: 10, border: f.name.includes("BioLabs") ? "2px solid #3DA9C7" : "1px solid #E3E7EE", background: f.name.includes("BioLabs") ? "#f4fafc" : "#fff" }}>
                 <div style={{ fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif", lineHeight: 1, marginBottom: "0.9rem", paddingBottom: "0.8rem", borderBottom: "1px solid #E3E7EE", display: "flex", alignItems: "baseline", gap: "0.4rem" }}>
                   <span style={{ fontWeight: 300, color: "#5A6478", fontSize: "1.15rem" }}>Boulder</span>
                   <span style={{ display: "inline-block", width: 1, height: "1.1rem", background: "#3DA9C7", alignSelf: "center", margin: "0 0.1rem" }} />
