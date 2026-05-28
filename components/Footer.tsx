@@ -35,7 +35,7 @@ export function Footer() {
             <a href="https://boulderiq.com/" target="_blank" rel="noopener" style={{ display: "block", color: "#cfd8e3", marginBottom: "0.4rem" }}>Boulder iQ →</a>
             <a href="https://bouldersterilization.com/" target="_blank" rel="noopener" style={{ display: "block", color: "#cfd8e3", marginBottom: "0.4rem" }}>Boulder Sterilization →</a>
             <a href="https://boulderraqa.com/" target="_blank" rel="noopener" style={{ display: "block", color: "#cfd8e3", marginBottom: "0.4rem" }}>Boulder RA/QA →</a>
-            <a href="https://boulderpackagetesting.com/" target="_blank" rel="noopener" style={{ display: "block", color: "#cfd8e3", marginBottom: "0.4rem" }}>Boulder Package Testing →</a>
+            <a href="https://boulderpackagetest.com/" target="_blank" rel="noopener" style={{ display: "block", color: "#cfd8e3", marginBottom: "0.4rem" }}>Boulder Package Testing →</a>
             <a href="https://boulderbiomed.com/" target="_blank" rel="noopener" style={{ display: "block", color: "#cfd8e3", marginBottom: "0.4rem" }}>Boulder BioMed (Hub) →</a>
           </div>
           <div>

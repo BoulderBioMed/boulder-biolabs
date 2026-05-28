@@ -45,7 +45,7 @@ Items requiring stakeholder input or external action before site is fully launch
 - [ ] Schema validates in Google Rich Results Test
 
 ## Post-Launch
-- [ ] Cross-site link updates on bouldersterilization.com, boulderbiomed.com, boulderraqa.com, boulderiq.com, boulderpackagetesting.com
+- [ ] Cross-site link updates on bouldersterilization.com, boulderbiomed.com, boulderraqa.com, boulderiq.com, boulderpackagetest.com
 - [ ] 6 launch blog posts published
 - [ ] 3 PDF lead magnets designed and gated
 - [ ] Replace stock with real lab photography (90 days)

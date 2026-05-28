@@ -70,7 +70,7 @@ export default function HomePage() {
             </Link>
           </div>
           <div style={{ background: "#F2F4F7", border: "1px solid #E3E7EE", borderLeft: "4px solid #3DA9C7", padding: "1.2rem 1.5rem", borderRadius: 6, marginTop: "1.5rem", fontSize: "0.95rem" }}>
-            <strong style={{ color: "#0B2545" }}>Need package and distribution testing too?</strong> Distribution testing (ASTM D4169, ISTA 3A, drop, vibration, compression, accelerated and real-time aging) is provided by our sister company, Boulder Package Testing — also part of the Boulder BioMed family. <a href="https://boulderpackagetesting.com/" target="_blank" rel="noopener">Visit Boulder Package Testing →</a>
+            <strong style={{ color: "#0B2545" }}>Need package and distribution testing too?</strong> Distribution testing (ASTM D4169, ISTA 3A, drop, vibration, compression, accelerated and real-time aging) is provided by our sister company, Boulder Package Testing — also part of the Boulder BioMed family. <a href="https://boulderpackagetest.com/" target="_blank" rel="noopener">Visit Boulder Package Testing →</a>
           </div>
         </div>
       </section>

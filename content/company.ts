@@ -13,6 +13,6 @@ export const family = [
   { name: "Boulder iQ", url: "https://boulderiq.com/", tagline: "Medical device engineering, design, and product development." },
   { name: "Boulder Sterilization", url: "https://bouldersterilization.com/", tagline: "EO and CD contract sterilization — the only U.S. provider offering both." },
   { name: "Boulder RA/QA", url: "https://boulderraqa.com/", tagline: "Regulatory affairs and quality assurance — 510(k), QMS, audit prep." },
-  { name: "Boulder Package Testing", url: "https://boulderpackagetesting.com/", tagline: "ASTM D4169, ISTA 3A, accelerated aging. Sister site to Boulder BioLabs." },
+  { name: "Boulder Package Testing", url: "https://boulderpackagetest.com/", tagline: "ASTM D4169, ISTA 3A, accelerated aging. Sister site to Boulder BioLabs." },
   { name: "Boulder BioMed (Hub)", url: "https://boulderbiomed.com/", tagline: "The parent brand. One QMS, one roof, every service." },
 ];

@@ -7,7 +7,7 @@ const SAME_AS = [
   "https://boulderiq.com/",
   "https://bouldersterilization.com/",
   "https://boulderraqa.com/",
-  "https://boulderpackagetesting.com/",
+  "https://boulderpackagetest.com/",
   "https://www.linkedin.com/company/boulder-iq/",
 ];
 
@@ -86,6 +86,21 @@ export function breadcrumbSchema(items: { name: string; url: string }[]) {
       name: item.name,
       item: item.url,
     })),
+  };
+}
+
+export function articleSchema(args: { headline: string; description: string; url: string; datePublished: string; authorName: string; authorUrl: string }) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: args.headline,
+    description: args.description,
+    mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}${args.url}` },
+    url: `${SITE_URL}${args.url}`,
+    datePublished: args.datePublished,
+    dateModified: args.datePublished,
+    author: { "@type": "Person", name: args.authorName, url: `${SITE_URL}${args.authorUrl}` },
+    publisher: { "@type": "Organization", name: "Boulder BioLabs", url: SITE_URL },
   };
 }
 

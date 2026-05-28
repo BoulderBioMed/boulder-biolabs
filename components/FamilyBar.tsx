@@ -13,7 +13,7 @@ export function FamilyBar() {
           <a href="https://boulderiq.com/" target="_blank" rel="noopener" style={{ color: "#cfd8e3" }}>Boulder iQ</a>
           <a href="https://bouldersterilization.com/" target="_blank" rel="noopener" style={{ color: "#cfd8e3" }}>Boulder Sterilization</a>
           <a href="https://boulderraqa.com/" target="_blank" rel="noopener" style={{ color: "#cfd8e3" }}>Boulder RA/QA</a>
-          <a href="https://boulderpackagetesting.com/" target="_blank" rel="noopener" style={{ color: "#cfd8e3" }}>Boulder Package Testing</a>
+          <a href="https://boulderpackagetest.com/" target="_blank" rel="noopener" style={{ color: "#cfd8e3" }}>Boulder Package Testing</a>
           <Link href="/" style={{ color: "#3DA9C7", fontWeight: 600 }}>Boulder BioLabs</Link>
         </nav>
       </div>
