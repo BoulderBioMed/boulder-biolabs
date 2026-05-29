@@ -75,7 +75,7 @@ export default function HomePage() {
             <Link href="/faq" style={{ background: "#fff", padding: "1.5rem", borderRadius: 10, border: "2px solid #3DA9C7", display: "block", textDecoration: "none", color: "#0B2545" }}>
               <div style={{ fontSize: "0.78rem", color: "#2A8AA8", fontWeight: 700, letterSpacing: "0.05em", marginBottom: "0.4rem" }}>4-HOUR RELEASE</div>
               <h3 style={{ color: "#0B2545", fontSize: "1.1rem", marginTop: 0 }}>Rapid Cycle Release</h3>
-              <p style={{ color: "#5A6478", fontSize: "0.92rem", marginBottom: "0.6rem" }}>rapid-readout biological indicators — cycle efficacy confirmed in 4 hours. Faster than typical 6-day RMM offerings from national labs.</p>
+              <p style={{ color: "#5A6478", fontSize: "0.92rem", marginBottom: "0.6rem" }}>Rapid-readout biological indicators — cycle efficacy confirmed in 4 hours. Faster than typical 6-day RMM offerings from national labs.</p>
               <span style={{ color: "#2A8AA8", fontWeight: 600, fontSize: "0.88rem" }}>Learn more →</span>
             </Link>
           </div>
