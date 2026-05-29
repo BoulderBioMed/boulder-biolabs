@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Industry } from "@/content/industries";
 import { getServiceBySlug } from "@/content/services";
 import { industries } from "@/content/industries";
@@ -28,7 +29,7 @@ export function IndustryPageLayout({ industry, children, image, imageAlt }: { in
 
       {image && (
         <div style={{ maxWidth: 1180, margin: "0 auto", padding: "0 1.5rem", marginTop: "-2rem" }}>
-          <img src={image} alt={imageAlt || industry.shortName} style={{ width: "100%", aspectRatio: "16/9", objectFit: "cover", borderRadius: 10, boxShadow: "0 6px 20px rgba(11,37,69,0.18)" }} />
+          <Image src={image} alt={imageAlt || industry.shortName} width={1600} height={900} sizes="(max-width: 1180px) 100vw, 1180px" priority style={{ width: "100%", height: "auto", objectFit: "cover", borderRadius: 10, boxShadow: "0 6px 20px rgba(11,37,69,0.18)" }} />
         </div>
       )}
 

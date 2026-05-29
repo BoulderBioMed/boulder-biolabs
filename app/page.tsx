@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { services } from "@/content/services";
 import { industries } from "@/content/industries";
 import { family } from "@/content/company";
@@ -29,7 +30,7 @@ export default function HomePage() {
       {/* Hero image banner */}
       <section style={{ background: "#061A33", padding: "0 1.5rem", marginTop: "-2px" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto" }}>
-          <img src="/img/bbl-hero-lab-cleanroom.png" alt="Boulder BioLabs cleanroom on the Boulder Sterilization campus" style={{ width: "100%", aspectRatio: "21/9", objectFit: "cover", display: "block", marginTop: "-3rem", borderRadius: 12, boxShadow: "0 16px 40px rgba(0,0,0,0.35)" }} />
+          <Image src="/img/bbl-hero-lab-cleanroom.png" alt="Boulder BioLabs cleanroom on the Boulder Sterilization campus" width={2100} height={900} sizes="(max-width: 1180px) 100vw, 1180px" priority style={{ width: "100%", height: "auto", objectFit: "cover", display: "block", marginTop: "-3rem", borderRadius: 12, boxShadow: "0 16px 40px rgba(0,0,0,0.35)" }} />
         </div>
       </section>
 
