@@ -4,7 +4,7 @@ import { getServiceBySlug } from "@/content/services";
 import { industries } from "@/content/industries";
 import { breadcrumbSchema } from "@/lib/schema";
 
-export function IndustryPageLayout({ industry, children }: { industry: Industry; children: React.ReactNode }) {
+export function IndustryPageLayout({ industry, children, image, imageAlt }: { industry: Industry; children: React.ReactNode; image?: string; imageAlt?: string }) {
   const url = `https://boulderbiolabs.com/industries/${industry.slug}`;
   const breadcrumb = breadcrumbSchema([
     { name: "Home", url: "https://boulderbiolabs.com/" },
@@ -26,7 +26,13 @@ export function IndustryPageLayout({ industry, children }: { industry: Industry;
         </div>
       </section>
 
-      <section style={{ padding: "3.5rem 1.5rem" }}>
+      {image && (
+        <div style={{ maxWidth: 1180, margin: "0 auto", padding: "0 1.5rem", marginTop: "-2rem" }}>
+          <img src={image} alt={imageAlt || industry.shortName} style={{ width: "100%", aspectRatio: "16/9", objectFit: "cover", borderRadius: 10, boxShadow: "0 6px 20px rgba(11,37,69,0.18)" }} />
+        </div>
+      )}
+
+      <section style={{ padding: image ? "2.5rem 1.5rem 3.5rem" : "3.5rem 1.5rem" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto", display: "grid", gridTemplateColumns: "2fr 1fr", gap: "3rem" }}>
           <div>
             <h2>Tests This Industry Requires</h2>

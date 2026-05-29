@@ -12,7 +12,7 @@ const faqs = [
 
 export default function BioburdenTestingPage() {
   return (
-    <ServicePageLayout service={service} faqs={faqs}>
+    <ServicePageLayout service={service} faqs={faqs} image="/img/bbl-bioburden-testing.png" imageAlt="Bioburden testing - microbial recovery plate counts">
       <h2>What Is Bioburden Testing?</h2>
       <p>Bioburden testing recovers viable microorganisms from a device using a validated extraction technique — rinse, sonication, or destructive methods — and enumerates by membrane filtration or pour-plate. Results are reported in CFU per device with aerobic/anaerobic/fungal breakouts, adjusted by a validated recovery efficiency (RE) factor.</p>
       <p>For sterilization programs, bioburden is the <strong>input</strong> to the validation math — EO half-cycle calculations, radiation dose-setting (VDmax, Method 1/2), and CD cycle parameters all start from a bioburden number.</p>

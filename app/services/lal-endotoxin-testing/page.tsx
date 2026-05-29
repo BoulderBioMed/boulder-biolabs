@@ -12,7 +12,7 @@ const faqs = [
 
 export default function LALPage() {
   return (
-    <ServicePageLayout service={service} faqs={faqs}>
+    <ServicePageLayout service={service} faqs={faqs} image="/img/bbl-lal-endotoxin.png" imageAlt="LAL bacterial endotoxin testing microplate reader">
       <h2>What Is LAL / BET Testing?</h2>
       <p>Endotoxins are lipopolysaccharide (LPS) fragments from gram-negative bacterial outer membranes. They are pyrogenic and survive most sterilization processes. For devices contacting blood, CSF, lymphatic fluid, or other sensitive routes, sterility isn&apos;t enough — endotoxin must be quantified and held below a route-specific threshold (EU/device or EU/cm²).</p>
       <p>Boulder BioLabs supports all three major LAL variants: <strong>gel-clot</strong>, <strong>kinetic turbidimetric</strong>, and <strong>kinetic chromogenic</strong>. Each method is qualified against the specific device material with an inhibition/enhancement study (the LAL equivalent of method suitability).</p>

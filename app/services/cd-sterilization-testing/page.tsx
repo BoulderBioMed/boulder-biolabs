@@ -12,7 +12,7 @@ const faqs = [
 
 export default function CDResidualsPage() {
   return (
-    <ServicePageLayout service={service} faqs={faqs}>
+    <ServicePageLayout service={service} faqs={faqs} image="/img/bbl-eo-cd-residuals-gc.png" imageAlt="Chlorine dioxide residuals testing by ion chromatography">
       <h2>What Is CD Sterilization Residuals Testing?</h2>
       <p>Chlorine dioxide sterilization uses gaseous ClO₂ as the sterilant — effective against bacterial spores, fungi, and viruses, at low temperature and low humidity. CD leaves residuals: residual chlorine dioxide plus degradation products (chlorite, chlorate). CD residuals testing quantifies those residuals after aeration and compares them to validated limits.</p>
       <p>Our testing protocol combines an extraction step — headspace or exhaustive aqueous — with ion chromatography or spectrophotometric analysis for ClO₂ and its anion degradation products.</p>

@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: `CSF & Neurosurgical Device Microbiol
 
 export default function CSFPage() {
   return (
-    <IndustryPageLayout industry={ind}>
+    <IndustryPageLayout industry={ind} image="/img/industry-csf-neurosurgical.png" imageAlt="CSF and neurosurgical devices - shunts and drains">
       <h2>The CSF Endotoxin Limit</h2>
       <p>FDA&apos;s 2015 <em>Pyrogen and Endotoxins Testing</em> guidance sets the CSF-contacting endotoxin limit at <strong>2.15 EU/device</strong> — roughly an order of magnitude stricter than the 20 EU/device blood-contact limit. That tighter limit drives method selection (typically kinetic chromogenic LAL) and increases the importance of the inhibition/enhancement study.</p>
     </IndustryPageLayout>

@@ -12,7 +12,7 @@ const faqs = [
 
 export default function MethodSuitabilityPage() {
   return (
-    <ServicePageLayout service={service} faqs={faqs}>
+    <ServicePageLayout service={service} faqs={faqs} image="/img/bbl-method-suitability.png" imageAlt="Method suitability bacteriostasis/fungistasis testing">
       <h2>What Is Method Suitability Testing?</h2>
       <p>A sterility test asks: <em>if there were a microbe on this device, would the test recover it?</em> If the device material is bacteriostatic or fungistatic, the answer might be &quot;no&quot; even when the device is contaminated. Method suitability validates that the test method recovers indicator organisms in the presence of the device material.</p>
       <p>We inoculate the device (or extract) with low levels of <em>S. aureus</em>, <em>P. aeruginosa</em>, <em>B. subtilis</em>, <em>C. albicans</em>, <em>A. brasiliensis</em>, and <em>C. sporogenes</em> per the USP &lt;71&gt; indicator panel and confirm recovery of each.</p>

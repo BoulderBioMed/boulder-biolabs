@@ -13,7 +13,7 @@ const faqs = [
 
 export default function SterilityTestingPage() {
   return (
-    <ServicePageLayout service={service} faqs={faqs}>
+    <ServicePageLayout service={service} faqs={faqs} image="/img/bbl-sterility-testing.png" imageAlt="Sterility testing in ISO Class 5 cleanroom">
       <h2>What Is Sterility Testing?</h2>
       <p>Sterility testing demonstrates that a sterilized medical device is free of viable microorganisms. The test is run by either direct inoculation or membrane filtration, depending on device geometry, and articles are incubated in fluid thioglycollate medium (FTM) and soybean-casein digest medium (SCDM) for 14 days.</p>
       <p>Sterility testing is paired with a <strong>method suitability study</strong> — without it, the sterility test itself is not regulatorily defensible.</p>

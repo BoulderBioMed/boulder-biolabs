@@ -31,6 +31,7 @@ export default function IntegratedPage() {
           <p>For most medical device manufacturers, the validation timeline looks like this. Devices are manufactured in one city, packaged in another, sent to a contract sterilizer in a third, and then shipped — often across the country — to a contract microbiology lab in a fourth. Each transition adds days of transit, paperwork, and chain-of-custody risk. New device introductions that should take a quarter end up taking three.</p>
           <p><strong>This is the problem Boulder BioMed was built to solve.</strong></p>
 
+          <img src="/img/sterilization-to-test-transfer.png" alt="Sterilization-to-test transfer on the Boulder BioMed campus" style={{ width: "100%", aspectRatio: "16/9", objectFit: "cover", borderRadius: 10, boxShadow: "0 6px 20px rgba(11,37,69,0.18)", margin: "1.5rem 0 0.5rem" }} />
           <h2>The Boulder BioMed Solution — Co-Location</h2>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 0.1fr 1fr 0.1fr 1fr", gap: "1rem", margin: "2rem 0", alignItems: "stretch" }}>
             <div style={{ background: "#fff", border: "1px solid #E3E7EE", borderRadius: 10, padding: "1.5rem", textAlign: "center" }}>

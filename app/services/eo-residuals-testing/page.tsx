@@ -12,7 +12,7 @@ const faqs = [
 
 export default function EOResidualsPage() {
   return (
-    <ServicePageLayout service={service} faqs={faqs}>
+    <ServicePageLayout service={service} faqs={faqs} image="/img/bbl-eo-cd-residuals-gc.png" imageAlt="EO residuals testing by gas chromatography">
       <h2>What Is EO Residuals Testing?</h2>
       <p>Ethylene oxide kills microorganisms by alkylating DNA but is toxic at residual levels, and reacts with chlorides to form ECH or with water to form EG. ISO 10993-7 sets maximum residuals for EO, ECH, and EG based on patient contact duration (limited, prolonged, permanent) and route (skin, mucosa, blood, implant).</p>
       <p>We run both major extraction strategies: <strong>headspace</strong> (approximates patient gas exposure) and <strong>exhaustive</strong> (total residual load). Analysis is by gas chromatography with flame ionization detection (GC-FID).</p>

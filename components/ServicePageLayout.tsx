@@ -6,9 +6,11 @@ type Props = {
   service: Service;
   children: React.ReactNode;
   faqs?: { q: string; a: string }[];
+  image?: string;
+  imageAlt?: string;
 };
 
-export function ServicePageLayout({ service, children, faqs }: Props) {
+export function ServicePageLayout({ service, children, faqs, image, imageAlt }: Props) {
   const url = `https://boulderbiolabs.com/services/${service.slug}`;
   const schemas: object[] = [
     serviceSchema({ name: service.shortTitle, description: service.metaDescription, url, serviceType: service.shortTitle }),
@@ -37,7 +39,13 @@ export function ServicePageLayout({ service, children, faqs }: Props) {
         </div>
       </section>
 
-      <section style={{ padding: "3.5rem 1.5rem" }}>
+      {image && (
+        <div style={{ maxWidth: 1180, margin: "0 auto", padding: "0 1.5rem", marginTop: "-2rem" }}>
+          <img src={image} alt={imageAlt || service.shortTitle} style={{ width: "100%", aspectRatio: "16/9", objectFit: "cover", borderRadius: 10, boxShadow: "0 6px 20px rgba(11,37,69,0.18)" }} />
+        </div>
+      )}
+
+      <section style={{ padding: image ? "2.5rem 1.5rem 3.5rem" : "3.5rem 1.5rem" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto", display: "grid", gridTemplateColumns: "2fr 1fr", gap: "3rem" }}>
           <div className="service-main">{children}</div>
           <aside style={{ background: "#fff", padding: "1.5rem", borderRadius: 10, border: "1px solid #E3E7EE", height: "fit-content", position: "sticky", top: 90 }}>

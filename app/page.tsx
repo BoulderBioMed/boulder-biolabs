@@ -25,7 +25,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Three Pillars */}
+      
+      {/* Hero image banner */}
+      <section style={{ background: "#061A33", padding: "0 1.5rem", marginTop: "-2px" }}>
+        <div style={{ maxWidth: 1180, margin: "0 auto" }}>
+          <img src="/img/bbl-hero-lab-cleanroom.png" alt="Boulder BioLabs cleanroom on the Boulder Sterilization campus" style={{ width: "100%", aspectRatio: "21/9", objectFit: "cover", display: "block", marginTop: "-3rem", borderRadius: 12, boxShadow: "0 16px 40px rgba(0,0,0,0.35)" }} />
+        </div>
+      </section>
+
+{/* Three Pillars */}
       <section style={{ padding: "3.5rem 1.5rem" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto" }}>
           <div style={{ textAlign: "center", maxWidth: 760, margin: "0 auto 2.5rem" }}>

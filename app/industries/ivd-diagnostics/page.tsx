@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: `IVD & Diagnostic Device Microbiology
 
 export default function IVDPage() {
   return (
-    <IndustryPageLayout industry={ind}>
+    <IndustryPageLayout industry={ind} image="/img/industry-ivd-diagnostics.png" imageAlt="IVD diagnostic devices and sample collection kits">
       <h2>Working with IVD Sample Geometries</h2>
       <p>IVD devices often present unusual sample geometries — small swabs, plastic test cassettes, lateral flow strips, sample collection tubes. Method selection (extraction technique, recovery efficiency study design) is tuned to the specific device.</p>
     </IndustryPageLayout>
