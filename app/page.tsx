@@ -14,7 +14,7 @@ export default function HomePage() {
         <div style={{ maxWidth: 1180, margin: "0 auto", position: "relative", zIndex: 2 }}>
           <h1 style={{ color: "#fff", maxWidth: 820 }}>Microbiology Testing for Medical Devices — On the Same Campus as Your Sterilizer.</h1>
           <p style={{ fontSize: "1.2rem", color: "#cfd8e3", maxWidth: 760, marginBottom: "1.2rem", fontWeight: 500 }}>
-            Sterility, bioburden, endotoxin, and EO/CD residuals testing — co-located with Boulder Sterilization. <strong>4-hour cycle release with 3M Attest rapid-readout BIs.</strong> No shipping. No chain-of-custody gap. Days off your validation timeline.
+            Sterility, bioburden, endotoxin, and EO/CD residuals testing — co-located with Boulder Sterilization. <strong>4-hour cycle release with rapid-readout biological indicators.</strong> No shipping. No chain-of-custody gap. Days off your validation timeline.
           </p>
           <p style={{ maxWidth: 720, color: "#cfd8e3", marginBottom: "1.8rem" }}>
             Boulder BioLabs is the contract microbiology lab inside the Boulder BioMed family of companies. Your sterilized devices move from the sterilizer to our test bench without ever leaving the campus.
@@ -43,7 +43,7 @@ export default function HomePage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.5rem" }}>
             {[
               { icon: "⚙", title: "Integrated Pipeline", body: <><strong>Sterilize and test without shipping.</strong> Boulder Sterilization is next door — the only U.S. contract sterilizer offering both EO and chlorine dioxide under one ISO 13485 system. Your samples walk to the lab.</> },
-              { icon: "⏱", title: "4-Hour Cycle Release", body: <><strong>Faster than Nelson&apos;s 6-day RMM.</strong> Boulder BioLabs supports 4-hour cycle release using 3M Attest rapid-readout biological indicators. For BI-based release programs, devices clear sterility verification within hours of cycle end.</> },
+              { icon: "⏱", title: "4-Hour Cycle Release", body: <><strong>Faster than typical 6-day RMM offerings.</strong> Boulder BioLabs supports 4-hour cycle release using rapid-readout biological indicators. For BI-based release programs, devices clear sterility verification within hours of cycle end.</> },
               { icon: "🏛", title: "Single Source", body: <><strong>One QMS. One relationship. One roof.</strong> Boulder BioLabs operates under the Boulder BioMed ISO 13485 quality management system — same system as Boulder Sterilization and Boulder RA/QA.</> },
             ].map((p) => (
               <div key={p.title} style={{ background: "#fff", padding: "2rem 1.6rem", borderRadius: 10, border: "1px solid #E3E7EE", boxShadow: "0 2px 8px rgba(11,37,69,0.04)" }}>
@@ -75,7 +75,7 @@ export default function HomePage() {
             <Link href="/faq" style={{ background: "#fff", padding: "1.5rem", borderRadius: 10, border: "2px solid #3DA9C7", display: "block", textDecoration: "none", color: "#0B2545" }}>
               <div style={{ fontSize: "0.78rem", color: "#2A8AA8", fontWeight: 700, letterSpacing: "0.05em", marginBottom: "0.4rem" }}>4-HOUR RELEASE</div>
               <h3 style={{ color: "#0B2545", fontSize: "1.1rem", marginTop: 0 }}>Rapid Cycle Release</h3>
-              <p style={{ color: "#5A6478", fontSize: "0.92rem", marginBottom: "0.6rem" }}>3M Attest rapid-readout biological indicators — cycle efficacy confirmed in 4 hours. Faster than Nelson&apos;s 6-day RMM.</p>
+              <p style={{ color: "#5A6478", fontSize: "0.92rem", marginBottom: "0.6rem" }}>rapid-readout biological indicators — cycle efficacy confirmed in 4 hours. Faster than typical 6-day RMM offerings from national labs.</p>
               <span style={{ color: "#2A8AA8", fontWeight: 600, fontSize: "0.88rem" }}>Learn more →</span>
             </Link>
           </div>

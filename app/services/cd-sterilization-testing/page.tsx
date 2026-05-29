@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: service.metaTitle, description: servi
 
 const faqs = [
   { q: "Why is CD residuals testing rare?", a: "Most contract labs aren't co-located with a CD sterilizer, so they have no reason to build the analytical capability. Boulder BioLabs offers it because Boulder Sterilization runs the only U.S. contract CD cycle under ISO 13485." },
-  { q: "What CD residual limits apply?", a: "There's no ISO standard equivalent to ISO 10993-7 for CD. The Clordisys 2026 peer-reviewed study (J. Med. Biol. Eng.) proposed thresholds of <6.83 mg/device chlorite and <70.65 mg/device chlorate, which provides the regulatory framework Boulder BioLabs operates against." },
+  { q: "What CD residual limits apply?", a: "There's no ISO standard equivalent to ISO 10993-7 for CD. A March 2026 peer-reviewed study in the Journal of Medical and Biological Engineering proposed thresholds of <6.83 mg/device chlorite and <70.65 mg/device chlorate, which provides the regulatory framework Boulder BioLabs operates against." },
 ];
 
 export default function CDResidualsPage() {
@@ -22,7 +22,7 @@ export default function CDResidualsPage() {
 
       <div style={{ background: "#F2F4F7", borderLeft: "4px solid #3DA9C7", padding: "1.5rem 1.8rem", borderRadius: 6, margin: "1.5rem 0" }}>
         <h3 style={{ color: "#0B2545", marginTop: 0 }}>Peer-Reviewed Toxicity Framework</h3>
-        <p>In March 2026, Clordisys Solutions published &quot;Chlorine Dioxide Medical Device Sterilization: Residual Toxicity Testing&quot; in the <em>Journal of Medical and Biological Engineering</em>. The study proposed toxicity limits of &lt;6.83 mg/device chlorite and &lt;70.65 mg/device chlorate, providing the regulatory framework Boulder BioLabs operates against. <a href="https://link.springer.com/article/10.1007/s40846-025-00995-8" target="_blank" rel="noopener">Read the study →</a></p>
+        <p>A peer-reviewed study titled &quot;Chlorine Dioxide Medical Device Sterilization: Residual Toxicity Testing&quot; was published in the <em>Journal of Medical and Biological Engineering</em> in March 2026. It proposed toxicity limits of &lt;6.83 mg/device chlorite and &lt;70.65 mg/device chlorate, providing the regulatory framework Boulder BioLabs operates against. <a href="https://link.springer.com/article/10.1007/s40846-025-00995-8" target="_blank" rel="noopener">Read the study →</a></p>
       </div>
 
       <div style={{ background: "#F2F4F7", borderLeft: "4px solid #3DA9C7", padding: "1.5rem 1.8rem", borderRadius: 6, margin: "1.5rem 0" }}>

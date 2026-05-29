@@ -9,10 +9,10 @@ import { organizationSchema, medicalLabSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   metadataBase: new URL("https://boulderbiolabs.com"),
   title: { default: "Boulder BioLabs | Medical Device Microbiology Testing Lab", template: "%s | Boulder BioLabs" },
-  description: "Contract microbiology testing for medical devices — sterility, bioburden, endotoxin, EO and CD residuals. Co-located with Boulder Sterilization. 4-hour cycle release with 3M Attest rapid-readout BIs.",
+  description: "Contract microbiology testing for medical devices — sterility, bioburden, endotoxin, EO and CD residuals. Co-located with Boulder Sterilization. 4-hour cycle release with rapid-readout biological indicators.",
   openGraph: {
     title: "Boulder BioLabs | Medical Device Microbiology Testing Lab",
-    description: "Contract microbiology testing for medical devices. Co-located with Boulder Sterilization. 4-hour cycle release with 3M Attest rapid-readout BIs.",
+    description: "Contract microbiology testing for medical devices. Co-located with Boulder Sterilization. 4-hour cycle release with rapid-readout biological indicators.",
     url: "https://boulderbiolabs.com",
     siteName: "Boulder BioLabs",
     type: "website",

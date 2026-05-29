@@ -17,7 +17,7 @@ export const services: Service[] = [
     isoTag: "ALIGNED WITH ISO 11737-2 · USP <71>",
     metaTitle: "Sterility Testing | ISO 11737-2 USP 71 | Boulder BioLabs",
     metaDescription: "Sterility testing aligned with ISO 11737-2 and USP <71>. Co-located with Boulder Sterilization. 4-hour BI release option.",
-    intro: "Sterility testing is the regulatory gate between a sterilized lot and a released product. Boulder BioLabs executes sterility test protocols aligned with ISO 11737-2 and USP <71>, operating under the Boulder BioMed ISO 13485 quality management system. Because we sit on the same campus as Boulder Sterilization, your devices move from sterilizer to incubator without leaving the property — no shipping, no transit contamination risk, no lost days. For BI-based release programs, we also offer 4-hour cycle release using 3M Attest rapid-readout biological indicators.",
+    intro: "Sterility testing is the regulatory gate between a sterilized lot and a released product. Boulder BioLabs executes sterility test protocols aligned with ISO 11737-2 and USP <71>, operating under the Boulder BioMed ISO 13485 quality management system. Because we sit on the same campus as Boulder Sterilization, your devices move from sterilizer to incubator without leaving the property — no shipping, no transit contamination risk, no lost days. For BI-based release programs, we also offer 4-hour cycle release using rapid-readout biological indicators.",
     related: ["method-suitability", "bioburden-testing", "eo-residuals-testing"],
   },
   {

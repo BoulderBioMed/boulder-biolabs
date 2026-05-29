@@ -47,14 +47,14 @@ export const pdfs: PdfLeadMagnet[] = [
     slug: "cd-primer",
     title: "Chlorine Dioxide Sterilization: A Manufacturer's Primer",
     description:
-      "Where chlorine dioxide fits, how the validation differs from EO, and what the Clordisys 2026 study means for your program.",
+      "Where chlorine dioxide fits, how the validation differs from EO, and what the March 2026 peer-reviewed framework means for your program.",
     pages: 4,
     file: "/downloads/boulder-biolabs-cd-primer.pdf",
     audience: "Device companies evaluating CD as an EO alternative",
     insideBullets: [
       "When CD is the right answer (heat-sensitive electronics, bioabsorbable polymers, fast cycles)",
       "EO vs. CD validation comparison table covering BIs, residuals standards, methods, and thresholds",
-      "What the March 2026 Clordisys study gives you as a citeable framework",
+      "What the March 2026 peer-reviewed study gives you as a citeable framework",
       "The only U.S. team operating the full CD stack under one ISO 13485 QMS",
     ],
   },
