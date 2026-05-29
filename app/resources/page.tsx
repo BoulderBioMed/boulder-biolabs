@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { articles } from "@/content/articles";
+import { pdfs } from "@/content/pdfs";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -54,6 +55,23 @@ export default function ResourcesPage() {
                 <Link href={`/resources/${article.slug}`} style={{ color: "#3DA9C7", fontWeight: 600, textDecoration: "none", fontSize: "0.9rem", marginTop: "auto" }}>Read article →</Link>
               </article>
             ))}
+          </div>
+
+          <div style={{ marginTop: "3.5rem" }}>
+            <h2 style={{ color: "#0B2545", marginBottom: "0.4rem" }}>Free Guides &amp; Checklists</h2>
+            <p style={{ color: "#5A6478", marginBottom: "1.5rem" }}>Downloadable PDFs for QA leads and manufacturing teams. Email-gated; we send the file and never spam you.</p>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "1.2rem" }}>
+              {pdfs.map((p) => (
+                <article key={p.slug} style={{ background: "#fff", border: "1px solid #e1e7ee", borderLeft: "4px solid #3DA9C7", borderRadius: 8, padding: "1.4rem 1.4rem 1.2rem", display: "flex", flexDirection: "column" }}>
+                  <p style={{ fontSize: "0.7rem", color: "#3DA9C7", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: "0.4rem" }}>Free PDF &middot; {p.pages} pages</p>
+                  <h3 style={{ color: "#0B2545", fontSize: "1.05rem", lineHeight: 1.3, marginTop: 0, marginBottom: "0.4rem" }}>
+                    <Link href={`/resources/${p.slug}`} style={{ color: "#0B2545", textDecoration: "none" }}>{p.title}</Link>
+                  </h3>
+                  <p style={{ fontSize: "0.88rem", color: "#5A6478", marginBottom: "0.9rem", flex: 1, lineHeight: 1.5 }}>{p.description}</p>
+                  <Link href={`/resources/${p.slug}`} style={{ color: "#3DA9C7", fontWeight: 600, textDecoration: "none", fontSize: "0.88rem", marginTop: "auto" }}>Get the PDF &rarr;</Link>
+                </article>
+              ))}
+            </div>
           </div>
 
           <div style={{ background: "#F2F4F7", borderRadius: 8, padding: "2rem", marginTop: "3rem", textAlign: "center" }}>
