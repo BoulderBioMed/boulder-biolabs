@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { services } from "@/content/services";
 import { industries } from "@/content/industries";
+import { articles } from "@/content/articles";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://boulderbiolabs.com";
@@ -13,8 +14,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/faq`, lastModified, priority: 0.7 },
     { url: `${base}/family`, lastModified, priority: 0.5 },
     { url: `${base}/contact`, lastModified, priority: 0.8 },
-    { url: `${base}/resources`, lastModified, priority: 0.5 },
+    { url: `${base}/resources`, lastModified, priority: 0.7 },
     ...services.map((s) => ({ url: `${base}/services/${s.slug}`, lastModified, priority: 0.8 })),
     ...industries.map((i) => ({ url: `${base}/industries/${i.slug}`, lastModified, priority: 0.7 })),
+    ...articles.map((a) => ({ url: `${base}/resources/${a.slug}`, lastModified: new Date(a.datePublished), priority: 0.6 })),
   ];
 }
