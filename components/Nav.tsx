@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { BoulderBioLabsLogo } from "./Logo";
+import { TrackedTel } from "./TrackedLinks";
 
 export function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -56,7 +57,7 @@ export function Nav() {
           <Link href="/integrated-testing" style={{ color: "#0B2545", fontWeight: 600, fontSize: "0.95rem" }}>Integrated Pipeline</Link>
           <Link href="/about" style={{ color: "#0B2545", fontWeight: 600, fontSize: "0.95rem" }}>About</Link>
           <Link href="/faq" style={{ color: "#0B2545", fontWeight: 600, fontSize: "0.95rem" }}>FAQ</Link>
-          <a href="tel:3035311238" style={{ fontWeight: 600, color: "#0B2545", fontSize: "0.9rem" }}>303-531-1238</a>
+          <TrackedTel number="3035311238" display="303-531-1238" location="header" style={{ fontWeight: 600, color: "#0B2545", fontSize: "0.9rem" }} />
           <Link href="/contact" className="btn btn-primary">Request a Quote</Link>
         </nav>
       </div>

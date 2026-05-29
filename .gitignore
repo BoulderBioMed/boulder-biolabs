@@ -7,5 +7,6 @@ out/
 .DS_Store
 .vercel
 *.pem
+tsconfig.tsbuildinfo
 
 .vercel

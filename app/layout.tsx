@@ -3,6 +3,7 @@ import "./globals.css";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { FamilyBar } from "@/components/FamilyBar";
+import { Analytics } from "@/components/Analytics";
 import { organizationSchema, medicalLabSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalLabSchema()) }} />
       </head>
       <body>
+        <Analytics />
         <FamilyBar />
         <Nav />
         <main style={{ minHeight: "60vh" }}>{children}</main>

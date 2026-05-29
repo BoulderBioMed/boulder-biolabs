@@ -2,6 +2,7 @@ import Link from "next/link";
 import { services } from "@/content/services";
 import { industries } from "@/content/industries";
 import { family } from "@/content/company";
+import { testimonials } from "@/content/testimonials";
 
 export default function HomePage() {
   return (
@@ -93,8 +94,29 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Family */}
+      {/* Testimonials */}
       <section style={{ background: "#fff", padding: "3.5rem 1.5rem" }}>
+        <div style={{ maxWidth: 1180, margin: "0 auto" }}>
+          <div style={{ textAlign: "center", maxWidth: 760, margin: "0 auto 2.5rem" }}>
+            <h2>What Our Clients Say</h2>
+            <p style={{ color: "#5A6478", fontSize: "1.1rem" }}>Anonymized feedback from medical device companies we support. Names changed to protect commercial confidentiality.</p>
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "1.4rem" }}>
+            {testimonials.map((t, i) => (
+              <figure key={i} style={{ margin: 0, background: "#F2F4F7", padding: "1.8rem 1.6rem", borderRadius: 10, border: "1px solid #E3E7EE", display: "flex", flexDirection: "column" }}>
+                <div style={{ color: "#3DA9C7", fontSize: "2rem", lineHeight: 1, marginBottom: "0.4rem", fontFamily: "Georgia, serif" }}>&ldquo;</div>
+                <blockquote style={{ margin: 0, color: "#1f2937", fontStyle: "italic", lineHeight: 1.55, fontSize: "0.95rem", flex: 1 }}>{t.quote}</blockquote>
+                <figcaption style={{ marginTop: "1.1rem", paddingTop: "0.9rem", borderTop: "1px solid #E3E7EE", color: "#0B2545", fontWeight: 600, fontSize: "0.92rem" }}>
+                  {t.name} <span style={{ color: "#5A6478", fontWeight: 400 }}>&middot; {t.location}</span>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Family */}
+      <section style={{ background: "#F8FAFC", padding: "3.5rem 1.5rem" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto" }}>
           <div style={{ textAlign: "center", maxWidth: 760, margin: "0 auto 2.5rem" }}>
             <h2>Our Family of Companies</h2>

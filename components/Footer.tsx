@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BoulderBioLabsLogo, BoulderBioMedLogo } from "./Logo";
+import { TrackedTel, TrackedExtLink } from "./TrackedLinks";
 
 export function Footer() {
   return (
@@ -32,15 +33,15 @@ export function Footer() {
           <div>
             <BoulderBioMedLogo variant="dark" height={38} />
             <div style={{ fontSize: "0.78rem", color: "#3DA9C7", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", margin: "0.6rem 0 0.8rem" }}>Family of Companies</div>
-            <a href="https://boulderiq.com/" target="_blank" rel="noopener" style={{ display: "block", color: "#cfd8e3", marginBottom: "0.4rem" }}>Boulder iQ →</a>
-            <a href="https://bouldersterilization.com/" target="_blank" rel="noopener" style={{ display: "block", color: "#cfd8e3", marginBottom: "0.4rem" }}>Boulder Sterilization →</a>
-            <a href="https://boulderraqa.com/" target="_blank" rel="noopener" style={{ display: "block", color: "#cfd8e3", marginBottom: "0.4rem" }}>Boulder RA/QA →</a>
-            <a href="https://boulderpackagetest.com/" target="_blank" rel="noopener" style={{ display: "block", color: "#cfd8e3", marginBottom: "0.4rem" }}>Boulder Package Testing →</a>
-            <a href="https://boulderbiomed.com/" target="_blank" rel="noopener" style={{ display: "block", color: "#cfd8e3", marginBottom: "0.4rem" }}>Boulder BioMed (Hub) →</a>
+            <TrackedExtLink href="https://boulderiq.com/" destination="boulder-iq" location="footer-family" style={{ display: "block", color: "#cfd8e3", marginBottom: "0.4rem" }}>Boulder iQ →</TrackedExtLink>
+            <TrackedExtLink href="https://bouldersterilization.com/" destination="boulder-sterilization" location="footer-family" style={{ display: "block", color: "#cfd8e3", marginBottom: "0.4rem" }}>Boulder Sterilization →</TrackedExtLink>
+            <TrackedExtLink href="https://boulderraqa.com/" destination="boulder-raqa" location="footer-family" style={{ display: "block", color: "#cfd8e3", marginBottom: "0.4rem" }}>Boulder RA/QA →</TrackedExtLink>
+            <TrackedExtLink href="https://boulderpackagetest.com/" destination="boulder-package-testing" location="footer-family" style={{ display: "block", color: "#cfd8e3", marginBottom: "0.4rem" }}>Boulder Package Testing →</TrackedExtLink>
+            <TrackedExtLink href="https://boulderbiomed.com/" destination="boulder-biomed-hub" location="footer-family" style={{ display: "block", color: "#cfd8e3", marginBottom: "0.4rem" }}>Boulder BioMed (Hub) →</TrackedExtLink>
           </div>
           <div>
             <h4 style={{ color: "#fff", marginBottom: "0.8rem", fontSize: "1rem" }}>Contact</h4>
-            <p>5375 Western Avenue<br />Boulder, CO 80301<br /><a href="tel:3035311238" style={{ color: "#cfd8e3" }}>303-531-1238</a><br /><a href="mailto:info@boulderiq.com" style={{ color: "#cfd8e3" }}>info@boulderiq.com</a></p>
+            <p>5375 Western Avenue<br />Boulder, CO 80301<br /><TrackedTel number="3035311238" display="303-531-1238" location="footer" style={{ color: "#cfd8e3" }} /><br /><a href="mailto:info@boulderiq.com" style={{ color: "#cfd8e3" }}>info@boulderiq.com</a></p>
             <p style={{ fontSize: "0.78rem", color: "rgba(255,255,255,0.55)", marginTop: "0.4rem" }}>BBM family operations: 5421 Western Ave.</p>
             <Link href="/contact" className="btn btn-primary" style={{ marginTop: "0.8rem", display: "inline-block" }}>Request a Quote</Link>
           </div>

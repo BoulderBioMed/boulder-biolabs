@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { trackEvent } from "@/components/Analytics";
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
@@ -12,7 +13,14 @@ export default function ContactPage() {
     const body = Object.fromEntries(formData.entries());
     try {
       const res = await fetch("/api/quote-request", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
-      if (res.ok) setSubmitted(true);
+      if (res.ok) {
+        setSubmitted(true);
+        trackEvent("quote_request_submitted", {
+          sterilization: body.sterilization,
+          tests: body.tests,
+          turnaround: body.turnaround,
+        });
+      }
     } catch (err) { console.error(err); }
     setSubmitting(false);
   }
