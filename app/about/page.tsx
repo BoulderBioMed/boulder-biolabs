@@ -21,7 +21,7 @@ export default function AboutPage() {
         <script key={p.name} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema({ name: p.name, jobTitle: p.title, description: p.bio.join(" ") })) }} />
       ))}
 
-      <section style={{ background: "linear-gradient(135deg, #0B2545 0%, #2A8AA8 100%)", color: "#fff", padding: "3rem 1.5rem 3.5rem" }}>
+      <section style={{ background: "linear-gradient(135deg, #0B2545 0%, #1F5180 100%)", color: "#fff", padding: "3rem 1.5rem 3.5rem" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto" }}>
           <h1 style={{ color: "#fff" }}>About Boulder BioLabs</h1>
           <p style={{ color: "#e3eaf2", maxWidth: 800, marginTop: "1rem", fontSize: "1.05rem" }}>Boulder BioLabs is the contract microbiology testing lab inside the Boulder BioMed family of companies — a vertically integrated medical device services group co-located on a single Boulder, Colorado campus.</p>
@@ -39,10 +39,10 @@ export default function AboutPage() {
           <h2>Leadership</h2>
           {people.map((p) => (
             <div key={p.name} style={{ display: "grid", gridTemplateColumns: "100px 1fr", gap: "1.5rem", background: "#fff", padding: "1.5rem", borderRadius: 10, border: "1px solid #E3E7EE", marginBottom: "1.2rem", alignItems: "start" }}>
-              <div style={{ width: 100, height: 100, background: "linear-gradient(135deg, #3DA9C7, #0B2545)", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontWeight: 800, fontSize: "1.8rem" }}>{p.initials}</div>
+              <div style={{ width: 100, height: 100, background: "linear-gradient(135deg, #2968A0, #0B2545)", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontWeight: 800, fontSize: "1.8rem" }}>{p.initials}</div>
               <div>
                 <h4 style={{ color: "#0B2545", marginTop: 0 }}>{p.name}</h4>
-                <div style={{ color: "#2A8AA8", fontWeight: 600, marginBottom: "0.4rem", fontSize: "0.92rem" }}>{p.title}</div>
+                <div style={{ color: "#1F5180", fontWeight: 600, marginBottom: "0.4rem", fontSize: "0.92rem" }}>{p.title}</div>
                 {p.bio.map((para, i) => (
                   <p key={i}>{para}</p>
                 ))}

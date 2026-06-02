@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { BoulderBioLabsLogo } from "./Logo";
+import BoulderLockup from "./BoulderLockup";
 import { TrackedTel } from "./TrackedLinks";
 
 export function Nav() {
@@ -13,7 +13,7 @@ export function Nav() {
     <header style={{ background: "#fff", borderBottom: "1px solid #E3E7EE", position: "sticky", top: 0, zIndex: 100, boxShadow: "0 1px 4px rgba(11,37,69,0.04)" }}>
       <div style={{ maxWidth: 1180, margin: "0 auto", padding: "1rem 1.5rem", display: "flex", justifyContent: "space-between", alignItems: "center", gap: "1rem", flexWrap: "wrap" }}>
         <Link href="/" style={{ display: "flex", alignItems: "center", textDecoration: "none" }}>
-          <BoulderBioLabsLogo variant="light" height={48} />
+          <BoulderLockup word="BioLabs" variant="light" size={28} />
         </Link>
 
         {/* Desktop nav */}

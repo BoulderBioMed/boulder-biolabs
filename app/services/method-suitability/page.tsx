@@ -17,7 +17,7 @@ export default function MethodSuitabilityPage() {
       <p>A sterility test asks: <em>if there were a microbe on this device, would the test recover it?</em> If the device material is bacteriostatic or fungistatic, the answer might be &quot;no&quot; even when the device is contaminated. Method suitability validates that the test method recovers indicator organisms in the presence of the device material.</p>
       <p>We inoculate the device (or extract) with low levels of <em>S. aureus</em>, <em>P. aeruginosa</em>, <em>B. subtilis</em>, <em>C. albicans</em>, <em>A. brasiliensis</em>, and <em>C. sporogenes</em> per the USP &lt;71&gt; indicator panel and confirm recovery of each.</p>
 
-      <div style={{ background: "#F2F4F7", borderLeft: "4px solid #3DA9C7", padding: "1.5rem 1.8rem", borderRadius: 6, margin: "1.5rem 0" }}>
+      <div style={{ background: "#F2F4F7", borderLeft: "4px solid #2968A0", padding: "1.5rem 1.8rem", borderRadius: 6, margin: "1.5rem 0" }}>
         <h3 style={{ color: "#0B2545", marginTop: 0 }}>Why It Matters</h3>
         <p>Skipping method suitability is one of the most common 483 finding categories in medical device sterility programs. An inspector pulling a sterility record will ask for the method suitability that validates it. <strong>The cost of doing it right at the start is small. The cost of doing it later, under pressure, is not.</strong></p>
       </div>

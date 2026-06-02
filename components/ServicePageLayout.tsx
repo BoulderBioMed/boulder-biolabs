@@ -29,7 +29,7 @@ export function ServicePageLayout({ service, children, faqs, image, imageAlt }: 
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
       ))}
 
-      <section style={{ background: "linear-gradient(135deg, #0B2545 0%, #2A8AA8 100%)", color: "#fff", padding: "3rem 1.5rem 3.5rem" }}>
+      <section style={{ background: "linear-gradient(135deg, #0B2545 0%, #1F5180 100%)", color: "#fff", padding: "3rem 1.5rem 3.5rem" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto" }}>
           <div style={{ fontSize: "0.88rem", color: "rgba(255,255,255,0.75)", marginBottom: "0.6rem" }}>
             <Link href="/" style={{ color: "rgba(255,255,255,0.95)" }}>Home</Link> › Services › {service.shortTitle}
@@ -57,7 +57,7 @@ export function ServicePageLayout({ service, children, faqs, image, imageAlt }: 
                 if (!r) return null;
                 return (
                   <li key={slug} style={{ marginBottom: "0.5rem" }}>
-                    <Link href={`/services/${r.slug}`} style={{ color: "#2A8AA8", fontWeight: 600 }}>{r.shortTitle} →</Link>
+                    <Link href={`/services/${r.slug}`} style={{ color: "#1F5180", fontWeight: 600 }}>{r.shortTitle} →</Link>
                   </li>
                 );
               })}

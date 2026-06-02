@@ -10,7 +10,7 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section style={{ background: "linear-gradient(135deg, #0B2545 0%, #061A33 100%)", color: "#fff", padding: "4.5rem 1.5rem 5rem", position: "relative", overflow: "hidden" }}>
-        <div style={{ position: "absolute", top: -100, right: -100, width: 400, height: 400, background: "radial-gradient(circle, rgba(61,169,199,0.25) 0%, transparent 70%)", borderRadius: "50%" }} />
+        <div style={{ position: "absolute", top: -100, right: -100, width: 400, height: 400, background: "radial-gradient(circle, rgba(41,104,160,0.25) 0%, transparent 70%)", borderRadius: "50%" }} />
         <div style={{ maxWidth: 1180, margin: "0 auto", position: "relative", zIndex: 2 }}>
           <h1 style={{ color: "#fff", maxWidth: 820 }}>Microbiology Testing for Medical Devices — On the Same Campus as Your Sterilizer.</h1>
           <p style={{ fontSize: "1.2rem", color: "#cfd8e3", maxWidth: 760, marginBottom: "1.2rem", fontWeight: 500 }}>
@@ -47,7 +47,7 @@ export default function HomePage() {
               { icon: "🏛", title: "Single Source", body: <><strong>One QMS. One relationship. One roof.</strong> Boulder BioLabs operates under the Boulder BioMed ISO 13485 quality management system — same system as Boulder Sterilization and Boulder RA/QA.</> },
             ].map((p) => (
               <div key={p.title} style={{ background: "#fff", padding: "2rem 1.6rem", borderRadius: 10, border: "1px solid #E3E7EE", boxShadow: "0 2px 8px rgba(11,37,69,0.04)" }}>
-                <div style={{ width: 48, height: 48, background: "linear-gradient(135deg, #3DA9C7, #0B2545)", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontSize: "1.4rem", marginBottom: "1rem" }}>{p.icon}</div>
+                <div style={{ width: 48, height: 48, background: "linear-gradient(135deg, #2968A0, #0B2545)", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontSize: "1.4rem", marginBottom: "1rem" }}>{p.icon}</div>
                 <h3 style={{ marginTop: 0, color: "#0B2545" }}>{p.title}</h3>
                 <p style={{ color: "#5A6478", marginBottom: 0 }}>{p.body}</p>
               </div>
@@ -66,20 +66,20 @@ export default function HomePage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "1rem" }}>
             {services.map((s) => (
               <Link key={s.slug} href={`/services/${s.slug}`} style={{ background: "#fff", padding: "1.5rem", borderRadius: 10, border: "1px solid #E3E7EE", display: "block", textDecoration: "none", color: "#0B2545" }}>
-                <div style={{ fontSize: "0.78rem", color: "#2A8AA8", fontWeight: 700, letterSpacing: "0.05em", marginBottom: "0.4rem" }}>{s.isoTag}</div>
+                <div style={{ fontSize: "0.78rem", color: "#1F5180", fontWeight: 700, letterSpacing: "0.05em", marginBottom: "0.4rem" }}>{s.isoTag}</div>
                 <h3 style={{ color: "#0B2545", fontSize: "1.1rem", marginTop: 0 }}>{s.shortTitle}</h3>
                 <p style={{ color: "#5A6478", fontSize: "0.92rem", marginBottom: "0.6rem" }}>{s.metaDescription}</p>
-                <span style={{ color: "#2A8AA8", fontWeight: 600, fontSize: "0.88rem" }}>Learn more →</span>
+                <span style={{ color: "#1F5180", fontWeight: 600, fontSize: "0.88rem" }}>Learn more →</span>
               </Link>
             ))}
-            <Link href="/faq" style={{ background: "#fff", padding: "1.5rem", borderRadius: 10, border: "2px solid #3DA9C7", display: "block", textDecoration: "none", color: "#0B2545" }}>
-              <div style={{ fontSize: "0.78rem", color: "#2A8AA8", fontWeight: 700, letterSpacing: "0.05em", marginBottom: "0.4rem" }}>4-HOUR RELEASE</div>
+            <Link href="/faq" style={{ background: "#fff", padding: "1.5rem", borderRadius: 10, border: "2px solid #2968A0", display: "block", textDecoration: "none", color: "#0B2545" }}>
+              <div style={{ fontSize: "0.78rem", color: "#1F5180", fontWeight: 700, letterSpacing: "0.05em", marginBottom: "0.4rem" }}>4-HOUR RELEASE</div>
               <h3 style={{ color: "#0B2545", fontSize: "1.1rem", marginTop: 0 }}>Rapid Cycle Release</h3>
               <p style={{ color: "#5A6478", fontSize: "0.92rem", marginBottom: "0.6rem" }}>Rapid-readout biological indicators — cycle efficacy confirmed in 4 hours. Faster than typical 6-day RMM offerings from national labs.</p>
-              <span style={{ color: "#2A8AA8", fontWeight: 600, fontSize: "0.88rem" }}>Learn more →</span>
+              <span style={{ color: "#1F5180", fontWeight: 600, fontSize: "0.88rem" }}>Learn more →</span>
             </Link>
           </div>
-          <div style={{ background: "#F2F4F7", border: "1px solid #E3E7EE", borderLeft: "4px solid #3DA9C7", padding: "1.2rem 1.5rem", borderRadius: 6, marginTop: "1.5rem", fontSize: "0.95rem" }}>
+          <div style={{ background: "#F2F4F7", border: "1px solid #E3E7EE", borderLeft: "4px solid #2968A0", padding: "1.2rem 1.5rem", borderRadius: 6, marginTop: "1.5rem", fontSize: "0.95rem" }}>
             <strong style={{ color: "#0B2545" }}>Need package and distribution testing too?</strong> Distribution testing (ASTM D4169, ISTA 3A, drop, vibration, compression, accelerated and real-time aging) is provided by our sister company, Boulder Package Testing — also part of the Boulder BioMed family. <a href="https://boulderpackagetest.com/" target="_blank" rel="noopener">Visit Boulder Package Testing →</a>
           </div>
         </div>
@@ -113,7 +113,7 @@ export default function HomePage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "1.4rem" }}>
             {testimonials.map((t, i) => (
               <figure key={i} style={{ margin: 0, background: "#F2F4F7", padding: "1.8rem 1.6rem", borderRadius: 10, border: "1px solid #E3E7EE", display: "flex", flexDirection: "column" }}>
-                <div style={{ color: "#3DA9C7", fontSize: "2rem", lineHeight: 1, marginBottom: "0.4rem", fontFamily: "Georgia, serif" }}>&ldquo;</div>
+                <div style={{ color: "#2968A0", fontSize: "2rem", lineHeight: 1, marginBottom: "0.4rem", fontFamily: "Georgia, serif" }}>&ldquo;</div>
                 <blockquote style={{ margin: 0, color: "#1f2937", fontStyle: "italic", lineHeight: 1.55, fontSize: "0.95rem", flex: 1 }}>{t.quote}</blockquote>
                 <figcaption style={{ marginTop: "1.1rem", paddingTop: "0.9rem", borderTop: "1px solid #E3E7EE", color: "#0B2545", fontWeight: 600, fontSize: "0.92rem" }}>
                   {t.name} <span style={{ color: "#5A6478", fontWeight: 400 }}>&middot; {t.location}</span>
@@ -133,10 +133,10 @@ export default function HomePage() {
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "1rem" }}>
             {family.map((f) => (
-              <div key={f.name} style={{ padding: "1.5rem", borderRadius: 10, border: f.name.includes("BioLabs") ? "2px solid #3DA9C7" : "1px solid #E3E7EE", background: f.name.includes("BioLabs") ? "#f4fafc" : "#fff" }}>
+              <div key={f.name} style={{ padding: "1.5rem", borderRadius: 10, border: f.name.includes("BioLabs") ? "2px solid #2968A0" : "1px solid #E3E7EE", background: f.name.includes("BioLabs") ? "#f4fafc" : "#fff" }}>
                 <div style={{ fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif", lineHeight: 1, marginBottom: "0.9rem", paddingBottom: "0.8rem", borderBottom: "1px solid #E3E7EE", display: "flex", alignItems: "baseline", gap: "0.4rem" }}>
                   <span style={{ fontWeight: 300, color: "#5A6478", fontSize: "1.15rem" }}>Boulder</span>
-                  <span style={{ display: "inline-block", width: 1, height: "1.1rem", background: "#3DA9C7", alignSelf: "center", margin: "0 0.1rem" }} />
+                  <span style={{ display: "inline-block", width: 1, height: "1.1rem", background: "#2968A0", alignSelf: "center", margin: "0 0.1rem" }} />
                   <span style={{ fontWeight: 700, color: "#0B2545", fontSize: "1.15rem" }}>{f.name.replace("Boulder ", "").replace(" (Hub)", "")}</span>
                 </div>
                 <p style={{ fontSize: "0.88rem", color: "#5A6478", marginBottom: "0.6rem" }}>{f.tagline}</p>
@@ -148,7 +148,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section style={{ background: "linear-gradient(135deg, #2A8AA8 0%, #0B2545 100%)", color: "#fff", padding: "3rem 1.5rem", textAlign: "center" }}>
+      <section style={{ background: "linear-gradient(135deg, #1F5180 0%, #0B2545 100%)", color: "#fff", padding: "3rem 1.5rem", textAlign: "center" }}>
         <h2 style={{ color: "#fff", margin: "0 0 0.6rem" }}>Ready to get days back in your validation schedule?</h2>
         <p style={{ color: "#fff", opacity: 0.95, maxWidth: 640, margin: "0 auto 1.4rem" }}>Scope, price, and a realistic turnaround date back within one business day.</p>
         <Link href="/contact" className="btn btn-white">Request a Quote</Link>

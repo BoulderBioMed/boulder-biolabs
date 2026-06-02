@@ -25,7 +25,7 @@ export default function LALPage() {
         <li><strong>Implantable class II/III devices</strong> by contact route and duration.</li>
       </ul>
 
-      <div style={{ background: "#F2F4F7", borderLeft: "4px solid #3DA9C7", padding: "1.5rem 1.8rem", borderRadius: 6, margin: "1.5rem 0" }}>
+      <div style={{ background: "#F2F4F7", borderLeft: "4px solid #2968A0", padding: "1.5rem 1.8rem", borderRadius: 6, margin: "1.5rem 0" }}>
         <h3 style={{ color: "#0B2545", marginTop: 0 }}>Why Boulder BioLabs for BET</h3>
         <p>BET is usually the last test between a sterilized lot and a released product. Co-located with the sterilizer, that last step collapses from days to hours. We also run BET alongside sterility and EO residuals on the same sample sets — one sample drop, three validations.</p>
       </div>

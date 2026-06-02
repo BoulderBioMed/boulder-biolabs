@@ -17,7 +17,7 @@ export function IndustryPageLayout({ industry, children, image, imageAlt }: { in
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
 
-      <section style={{ background: "linear-gradient(135deg, #0B2545 0%, #2A8AA8 100%)", color: "#fff", padding: "3rem 1.5rem 3.5rem" }}>
+      <section style={{ background: "linear-gradient(135deg, #0B2545 0%, #1F5180 100%)", color: "#fff", padding: "3rem 1.5rem 3.5rem" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto" }}>
           <div style={{ fontSize: "0.88rem", color: "rgba(255,255,255,0.75)", marginBottom: "0.6rem" }}>
             <Link href="/" style={{ color: "rgba(255,255,255,0.95)" }}>Home</Link> › Industries › {industry.shortName}
@@ -55,7 +55,7 @@ export function IndustryPageLayout({ industry, children, image, imageAlt }: { in
             <ul style={{ listStyle: "none", margin: "0 0 1rem 0", padding: 0 }}>
               {industries.filter((i) => i.slug !== industry.slug).map((i) => (
                 <li key={i.slug} style={{ marginBottom: "0.5rem" }}>
-                  <Link href={`/industries/${i.slug}`} style={{ color: "#2A8AA8", fontWeight: 600 }}>{i.shortName} →</Link>
+                  <Link href={`/industries/${i.slug}`} style={{ color: "#1F5180", fontWeight: 600 }}>{i.shortName} →</Link>
                 </li>
               ))}
             </ul>

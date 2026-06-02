@@ -1,39 +1,52 @@
 @import "tailwindcss";
 
+/* ===== Boulder BioMed family brand tokens — see /docs/brand-style-guide.html =====
+   Lato everywhere · Boulder Blue primary · Navy dark/footer · Green accent.
+   The retired teal token is repointed to Boulder Blue so any legacy reference
+   resolves to the brand primary. */
 @theme {
-  --color-navy: #0B2545;
+  --color-boulder-blue: #2968A0;  /* primary · links · buttons · descriptor */
+  --color-navy: #0B2545;          /* headings · dark sections · footer */
   --color-navy-dark: #061A33;
-  --color-teal: #3DA9C7;
-  --color-teal-dark: #2A8AA8;
-  --color-gray-light: #F2F4F7;
-  --color-gray-medium: #D1D5DB;
+  --color-sky-blue: #5B8FC7;      /* descriptor on dark */
+  --color-green: #75D69C;         /* accent · stat numbers · highlights */
+  --color-slate: #414856;         /* "Boulder" wordmark on light */
+  --color-ink: #2A2A2A;           /* body text */
+  --color-boulder-gray: #C9CFD6;  /* "Boulder" on dark */
+  --color-cloud: #F4F6F8;         /* light section bg */
+  /* legacy aliases — repointed to brand palette */
+  --color-teal: #2968A0;
+  --color-teal-dark: #1F5180;
+  --color-gray-light: #F4F6F8;
+  --color-gray-medium: #C9CFD6;
   --color-gray-text: #5A6478;
   --color-text: #0B2545;
   --color-border: #E3E7EE;
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --radius: 6px;
+  --font-sans: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 * { box-sizing: border-box; }
 body {
   font-family: var(--font-sans);
-  color: var(--color-text);
+  color: var(--color-ink);
   background: var(--color-gray-light);
   line-height: 1.55;
 }
-a { color: var(--color-teal-dark); text-decoration: none; }
+a { color: var(--color-boulder-blue); text-decoration: none; }
 a:hover { color: var(--color-navy); text-decoration: underline; }
-h1, h2, h3, h4 { color: var(--color-navy); font-weight: 700; line-height: 1.25; }
+h1, h2, h3, h4 { color: var(--color-navy); font-weight: 900; line-height: 1.25; letter-spacing: -0.01em; }
 h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); }
 h2 { font-size: clamp(1.4rem, 3vw, 2rem); }
-h3 { font-size: 1.2rem; }
+h3 { font-size: 1.2rem; font-weight: 700; }
 .btn {
-  display: inline-block; padding: 0.7rem 1.3rem; border-radius: 6px;
+  display: inline-block; padding: 0.7rem 1.3rem; border-radius: var(--radius);
   font-weight: 700; font-size: 0.95rem; text-decoration: none; cursor: pointer;
-  border: none; transition: all 0.15s ease;
+  border: 1px solid transparent; transition: all 0.15s ease;
 }
-.btn-primary { background: var(--color-teal); color: #fff; }
+.btn-primary { background: var(--color-boulder-blue); color: #fff; border-color: var(--color-boulder-blue); }
 .btn-primary:hover { background: var(--color-teal-dark); color: #fff; text-decoration: none; }
-.btn-secondary { background: transparent; color: var(--color-navy); border: 2px solid var(--color-navy); }
-.btn-secondary:hover { background: var(--color-navy); color: #fff; text-decoration: none; }
+.btn-secondary { background: transparent; color: var(--color-boulder-blue); border: 1px solid var(--color-boulder-blue); }
+.btn-secondary:hover { background: var(--color-boulder-blue); color: #fff; text-decoration: none; }
 .btn-white { background: #fff; color: var(--color-navy); }
 .btn-white:hover { background: var(--color-gray-light); color: var(--color-navy); text-decoration: none; }

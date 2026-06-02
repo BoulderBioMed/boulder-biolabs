@@ -44,7 +44,7 @@ export function PdfLandingPage({ pdf }: { pdf: PdfLeadMagnet }) {
         </div>
       </nav>
 
-      <section style={{ background: "linear-gradient(135deg, #0B2545 0%, #2A8AA8 100%)", color: "#fff", padding: "3rem 1.5rem 3.5rem" }}>
+      <section style={{ background: "linear-gradient(135deg, #0B2545 0%, #1F5180 100%)", color: "#fff", padding: "3rem 1.5rem 3.5rem" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto" }}>
           <p style={{ color: "#9DD6E8", fontSize: "0.8rem", textTransform: "uppercase", letterSpacing: "0.05em", fontWeight: 600, marginBottom: "0.6rem" }}>Free Guide &middot; {pdf.pages} pages</p>
           <h1 style={{ color: "#fff", maxWidth: 820 }}>{pdf.title}</h1>
@@ -74,7 +74,7 @@ export function PdfLandingPage({ pdf }: { pdf: PdfLeadMagnet }) {
                   target="_blank"
                   rel="noopener"
                   onClick={() => trackEvent("pdf_downloaded", { slug: pdf.slug, title: pdf.title })}
-                  style={{ display: "inline-block", background: "#3DA9C7", color: "#fff", padding: "0.85rem 1.4rem", borderRadius: 6, textDecoration: "none", fontWeight: 600, fontSize: "0.95rem", marginTop: "0.6rem" }}
+                  style={{ display: "inline-block", background: "#2968A0", color: "#fff", padding: "0.85rem 1.4rem", borderRadius: 6, textDecoration: "none", fontWeight: 600, fontSize: "0.95rem", marginTop: "0.6rem" }}
                 >Download the PDF &rarr;</a>
               </>
             ) : (
@@ -89,13 +89,13 @@ export function PdfLandingPage({ pdf }: { pdf: PdfLeadMagnet }) {
                   <button
                     type="submit"
                     disabled={state === "submitting"}
-                    style={{ background: "#3DA9C7", color: "#fff", padding: "0.85rem 1.4rem", borderRadius: 6, border: "none", fontWeight: 600, fontSize: "0.95rem", cursor: state === "submitting" ? "not-allowed" : "pointer", opacity: state === "submitting" ? 0.7 : 1 }}
+                    style={{ background: "#2968A0", color: "#fff", padding: "0.85rem 1.4rem", borderRadius: 6, border: "none", fontWeight: 600, fontSize: "0.95rem", cursor: state === "submitting" ? "not-allowed" : "pointer", opacity: state === "submitting" ? 0.7 : 1 }}
                   >
                     {state === "submitting" ? "Sending..." : "Email me the PDF"}
                   </button>
                   {state === "error" && (
                     <p style={{ color: "#dc2626", fontSize: "0.85rem", margin: 0 }}>
-                      Something went wrong on our end. Try again, or email <a href="mailto:info@boulderiq.com" style={{ color: "#3DA9C7" }}>info@boulderiq.com</a>.
+                      Something went wrong on our end. Try again, or email <a href="mailto:info@boulderiq.com" style={{ color: "#2968A0" }}>info@boulderiq.com</a>.
                     </p>
                   )}
                 </form>

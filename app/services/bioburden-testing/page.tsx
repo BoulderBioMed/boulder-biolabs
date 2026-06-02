@@ -36,7 +36,7 @@ export default function BioburdenTestingPage() {
         <li><strong>Reporting</strong> with raw counts, RE, adjusted estimate, and genus-level ID on request.</li>
       </ol>
 
-      <div style={{ background: "#F2F4F7", borderLeft: "4px solid #3DA9C7", padding: "1.5rem 1.8rem", borderRadius: 6, margin: "1.5rem 0" }}>
+      <div style={{ background: "#F2F4F7", borderLeft: "4px solid #2968A0", padding: "1.5rem 1.8rem", borderRadius: 6, margin: "1.5rem 0" }}>
         <h3 style={{ color: "#0B2545", marginTop: 0 }}>Why Boulder BioLabs for Bioburden</h3>
         <p>Co-locating bioburden testing with Boulder Sterilization tightens the feedback loop. When bioburden trends up, sterilization cycle parameters can be tuned before the next production lot is loaded.</p>
       </div>

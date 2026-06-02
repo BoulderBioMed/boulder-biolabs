@@ -38,7 +38,7 @@ export default function ContactPage() {
 
   return (
     <>
-      <section style={{ background: "linear-gradient(135deg, #0B2545 0%, #2A8AA8 100%)", color: "#fff", padding: "3rem 1.5rem 3.5rem" }}>
+      <section style={{ background: "linear-gradient(135deg, #0B2545 0%, #1F5180 100%)", color: "#fff", padding: "3rem 1.5rem 3.5rem" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto" }}>
           <h1 style={{ color: "#fff" }}>Request a Quote</h1>
           <p style={{ color: "#e3eaf2", maxWidth: 800, marginTop: "1rem", fontSize: "1.05rem" }}>Tell us your device, sterilization method, and tests needed. Scope, price, and turnaround date back within one business day.</p>

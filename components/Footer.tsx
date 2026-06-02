@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BoulderBioLabsLogo, BoulderBioMedLogo } from "./Logo";
+import BoulderLockup from "./BoulderLockup";
 import { TrackedTel, TrackedExtLink } from "./TrackedLinks";
 
 export function Footer() {
@@ -8,9 +8,9 @@ export function Footer() {
       <div style={{ maxWidth: 1180, margin: "0 auto" }}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "2rem", paddingBottom: "2rem", borderBottom: "1px solid rgba(255,255,255,0.1)", marginBottom: "1.5rem" }}>
           <div>
-            <BoulderBioLabsLogo variant="dark" height={56} />
+            <BoulderLockup word="BioLabs" variant="dark" size={38} />
             <p style={{ marginTop: "0.6rem" }}>Contract microbiology testing for medical devices. Co-located with Boulder Sterilization.</p>
-            <span style={{ display: "inline-block", background: "rgba(61,169,199,0.2)", color: "#3DA9C7", padding: "0.25rem 0.7rem", borderRadius: 4, fontWeight: 700, fontSize: "0.78rem", letterSpacing: "0.05em", marginTop: "0.5rem" }}>ISO 13485 QMS (VIA BBM)</span>
+            <span style={{ display: "inline-block", background: "rgba(41,104,160,0.2)", color: "#2968A0", padding: "0.25rem 0.7rem", borderRadius: 4, fontWeight: 700, fontSize: "0.78rem", letterSpacing: "0.05em", marginTop: "0.5rem" }}>ISO 13485 QMS (VIA BBM)</span>
           </div>
           <div>
             <h4 style={{ color: "#fff", marginBottom: "0.8rem", fontSize: "1rem" }}>Services</h4>
@@ -31,13 +31,15 @@ export function Footer() {
             <Link href="/contact" style={{ display: "block", color: "#cfd8e3", marginBottom: "0.4rem" }}>Contact</Link>
           </div>
           <div>
-            <BoulderBioMedLogo variant="dark" height={38} />
-            <div style={{ fontSize: "0.78rem", color: "#3DA9C7", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", margin: "0.6rem 0 0.8rem" }}>Family of Companies</div>
+            <BoulderLockup word="BioMed" variant="dark" size={26} />
+            <div style={{ fontSize: "0.78rem", color: "#5B8FC7", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", margin: "0.6rem 0 0.8rem" }}>Family of Companies</div>
+            <TrackedExtLink href="https://boulderbiomed.com/" destination="boulder-biomed-hub" location="footer-family" style={{ display: "block", color: "#cfd8e3", marginBottom: "0.4rem" }}>Boulder BioMed →</TrackedExtLink>
             <TrackedExtLink href="https://boulderiq.com/" destination="boulder-iq" location="footer-family" style={{ display: "block", color: "#cfd8e3", marginBottom: "0.4rem" }}>Boulder iQ →</TrackedExtLink>
             <TrackedExtLink href="https://bouldersterilization.com/" destination="boulder-sterilization" location="footer-family" style={{ display: "block", color: "#cfd8e3", marginBottom: "0.4rem" }}>Boulder Sterilization →</TrackedExtLink>
             <TrackedExtLink href="https://boulderraqa.com/" destination="boulder-raqa" location="footer-family" style={{ display: "block", color: "#cfd8e3", marginBottom: "0.4rem" }}>Boulder RA/QA →</TrackedExtLink>
+            <Link href="/" style={{ display: "block", color: "#5B8FC7", fontWeight: 700, marginBottom: "0.4rem" }}>Boulder BioLabs →</Link>
             <TrackedExtLink href="https://boulderpackagetest.com/" destination="boulder-package-testing" location="footer-family" style={{ display: "block", color: "#cfd8e3", marginBottom: "0.4rem" }}>Boulder Package Testing →</TrackedExtLink>
-            <TrackedExtLink href="https://boulderbiomed.com/" destination="boulder-biomed-hub" location="footer-family" style={{ display: "block", color: "#cfd8e3", marginBottom: "0.4rem" }}>Boulder BioMed (Hub) →</TrackedExtLink>
+            <TrackedExtLink href="https://boulderappliedai.com/" destination="boulder-applied-ai" location="footer-family" style={{ display: "block", color: "#cfd8e3", marginBottom: "0.4rem" }}>Boulder Applied AI →</TrackedExtLink>
           </div>
           <div>
             <h4 style={{ color: "#fff", marginBottom: "0.8rem", fontSize: "1rem" }}>Contact</h4>

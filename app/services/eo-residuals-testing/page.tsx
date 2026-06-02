@@ -27,7 +27,7 @@ export default function EOResidualsPage() {
         <li><strong>Post-recall remediation.</strong></li>
       </ul>
 
-      <div style={{ background: "#F2F4F7", borderLeft: "4px solid #3DA9C7", padding: "1.5rem 1.8rem", borderRadius: 6, margin: "1.5rem 0" }}>
+      <div style={{ background: "#F2F4F7", borderLeft: "4px solid #2968A0", padding: "1.5rem 1.8rem", borderRadius: 6, margin: "1.5rem 0" }}>
         <h3 style={{ color: "#0B2545", marginTop: 0 }}>The Strongest Integration Story</h3>
         <p>The EO cycle has a back-end called <strong>aeration</strong>, where residual EO out-gasses. National labs typically don&apos;t see the device until 2–5 business days after aeration ends — that shipping window adds extra aeration time onto the sample. When EO residuals testing happens on the same campus as the EO sterilizer, the sample is pulled at the moment aeration ends. <strong>Cycles tighten. Throughput climbs. Validations finish in days that used to take weeks.</strong></p>
       </div>

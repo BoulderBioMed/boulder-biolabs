@@ -57,7 +57,7 @@ function renderSection(section: ArticleSection, i: number) {
       );
     case "callout":
       return (
-        <div key={i} style={{ background: "#F2F4F7", borderLeft: "4px solid #3DA9C7", padding: "1.3rem 1.6rem", borderRadius: 6, margin: "1.5rem 0" }}>
+        <div key={i} style={{ background: "#F2F4F7", borderLeft: "4px solid #2968A0", padding: "1.3rem 1.6rem", borderRadius: 6, margin: "1.5rem 0" }}>
           {section.title && <h3 style={{ color: "#0B2545", marginTop: 0, marginBottom: "0.5rem" }}>{section.title}</h3>}
           <p style={{ margin: 0, lineHeight: 1.7 }}>{section.text}</p>
         </div>
@@ -66,7 +66,7 @@ function renderSection(section: ArticleSection, i: number) {
       return (
         <div key={i} style={{ background: "#0B2545", color: "#fff", padding: "1.6rem 1.8rem", borderRadius: 8, marginTop: "2rem" }}>
           <p style={{ margin: 0, marginBottom: "1rem", color: "#e3eaf2" }}>{section.text}</p>
-          <Link href="/contact" style={{ display: "inline-block", background: "#3DA9C7", color: "#fff", padding: "0.7rem 1.4rem", borderRadius: 4, textDecoration: "none", fontWeight: 600 }}>Request a Quote →</Link>
+          <Link href="/contact" style={{ display: "inline-block", background: "#2968A0", color: "#fff", padding: "0.7rem 1.4rem", borderRadius: 4, textDecoration: "none", fontWeight: 600 }}>Request a Quote →</Link>
         </div>
       );
   }
@@ -120,7 +120,7 @@ export default async function Page({ params }: PageProps) {
         </div>
       </nav>
 
-      <section style={{ background: "linear-gradient(135deg, #0B2545 0%, #2A8AA8 100%)", color: "#fff", padding: "3rem 1.5rem 3.5rem" }}>
+      <section style={{ background: "linear-gradient(135deg, #0B2545 0%, #1F5180 100%)", color: "#fff", padding: "3rem 1.5rem 3.5rem" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto" }}>
           <p style={{ color: "#9DD6E8", fontSize: "0.85rem", textTransform: "uppercase", letterSpacing: "0.05em", fontWeight: 600, marginBottom: "0.8rem" }}>{formatDate(article.datePublished)} · Boulder BioLabs</p>
           <h1 style={{ color: "#fff", fontSize: "2.2rem", lineHeight: 1.2, maxWidth: 900 }}>{article.title}</h1>
