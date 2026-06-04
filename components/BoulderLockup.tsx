@@ -14,8 +14,11 @@ type BoulderLockupProps = {
 
 export default function BoulderLockup({ word, variant = "light", size = 42 }: BoulderLockupProps) {
   const c = {
-    light: { b: "#414856", w: "#2968A0", r: "#9AA4B0" },
-    dark: { b: "#C9CFD6", w: "#5B8FC7", r: "#7C8794" },
+    light: { b: "#636466", w: "#286898", r: "#9A9A9A" },
+    // Footer/family-bar sit on a navy background, where the guide's blue name is
+    // unreadable — use a clean white reverse treatment (legible on dark). When the
+    // footer bg moves to brand-dark #12161C, restore Boulder white + name #286898.
+    dark: { b: "#FFFFFF", w: "#FFFFFF", r: "rgba(255,255,255,0.6)" },
     reverse: { b: "#fff", w: "#fff", r: "rgba(255,255,255,.85)" },
   }[variant];
   const lines = Array.isArray(word) ? word : [word];
