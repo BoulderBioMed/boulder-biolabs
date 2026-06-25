@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import { FamilyBar } from "@/components/FamilyBar";
 import { Analytics } from "@/components/Analytics";
 import { organizationSchema, medicalLabSchema } from "@/lib/schema";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://boulderbiolabs.com"),
@@ -33,6 +34,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <Analytics />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-757644544"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads-tag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-757644544');
+          `}
+        </Script>
         <FamilyBar />
         <Nav />
         <main style={{ minHeight: "60vh" }}>{children}</main>
