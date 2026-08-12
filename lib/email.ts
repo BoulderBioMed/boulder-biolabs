@@ -8,9 +8,15 @@
 //   RESEND_API_KEY   — Resend API key
 //   FORM_FROM_EMAIL  — verified sender, e.g. "Boulder BioLabs <forms@boulderbiomed.com>"
 //
-// The recipient is fixed to info@boulderiq.com per the brand standard.
+// Recipients: the shared brand-standard inbox plus the named team members
+// who handle BioLabs submissions.
 
-export const FORM_RECIPIENT = "info@boulderiq.com";
+export const FORM_RECIPIENT = [
+  "info@boulderiq.com",
+  "madeline.kasic@boulderiq.com",
+  "jim.kasic@boulderiq.com",
+  "kelly.finnegan@boulderiq.com",
+];
 
 type SendArgs = { subject: string; text: string; replyTo?: string };
 
@@ -27,7 +33,7 @@ export async function sendFormEmail({ subject, text, replyTo }: SendArgs): Promi
       headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
       body: JSON.stringify({
         from,
-        to: [FORM_RECIPIENT],
+        to: FORM_RECIPIENT,
         subject,
         text,
         ...(replyTo ? { reply_to: replyTo } : {}),

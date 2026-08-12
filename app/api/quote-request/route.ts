@@ -11,7 +11,7 @@ export async function POST(request: NextRequest) {
     const replyTo = typeof body?.email === "string" ? body.email : undefined;
     const { sent } = await sendFormEmail({
       subject: `Boulder BioLabs — quote request${body?.company ? ` from ${body.company}` : ""}`,
-      text: `New quote request for Boulder BioLabs (delivers to ${FORM_RECIPIENT}):\n\n${lines.join("\n")}`,
+      text: `New quote request for Boulder BioLabs (delivers to ${FORM_RECIPIENT.join(", ")}):\n\n${lines.join("\n")}`,
       replyTo,
     });
 
