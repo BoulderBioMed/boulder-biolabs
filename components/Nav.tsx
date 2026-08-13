@@ -56,6 +56,8 @@ export function Nav() {
 
           <Link href="/integrated-testing" style={{ color: "#0B2545", fontWeight: 600, fontSize: "0.95rem" }}>Integrated Pipeline</Link>
           <Link href="/about" style={{ color: "#0B2545", fontWeight: 600, fontSize: "0.95rem" }}>About</Link>
+          <Link href="/family" style={{ color: "#0B2545", fontWeight: 600, fontSize: "0.95rem" }}>Our Family</Link>
+          <Link href="/resources" style={{ color: "#0B2545", fontWeight: 600, fontSize: "0.95rem" }}>Resources</Link>
           <Link href="/faq" style={{ color: "#0B2545", fontWeight: 600, fontSize: "0.95rem" }}>FAQ</Link>
           <TrackedTel number="3035311238" display="303-531-1238" location="header" style={{ fontWeight: 600, color: "#0B2545", fontSize: "0.9rem" }} />
           <Link href="/contact" className="btn btn-primary">Request a Quote</Link>
