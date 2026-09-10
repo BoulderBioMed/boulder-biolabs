@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     { url: `${base}/`, lastModified, priority: 1.0 },
+    { url: `${base}/sterilization-partners`, lastModified, priority: 0.8 },
     { url: `${base}/integrated-testing`, lastModified, priority: 0.9 },
     { url: `${base}/about`, lastModified, priority: 0.7 },
     { url: `${base}/faq`, lastModified, priority: 0.7 },
