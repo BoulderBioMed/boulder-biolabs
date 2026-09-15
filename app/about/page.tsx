@@ -34,7 +34,7 @@ export default function AboutPage() {
           <p>Cut weeks out of every medical device validation by putting sterilization, microbiology testing, and regulatory support under one roof.</p>
 
           <h2>Quality System</h2>
-          <p>Boulder BioLabs operates under the <strong>Boulder BioMed ISO 13485 quality management system</strong>. Microbiology testing protocols are aligned with ISO 11737-1, ISO 11737-2, USP &lt;71&gt;, USP &lt;85&gt;, and ISO 10993-7. Lab-level method accreditations (A2LA, ISO 17025) are in progress.</p>
+          <p>Boulder BioLabs operates under the <strong>Boulder BioMed ISO 13485 quality management system</strong>.</p>
 
           <h2>Leadership</h2>
           {people.map((p) => (
