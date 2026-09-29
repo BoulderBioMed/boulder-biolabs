@@ -30,23 +30,24 @@ export function ServicePageLayout({ service, children, faqs, image, imageAlt }: 
       ))}
 
       <section style={{ background: "linear-gradient(135deg, #0B2545 0%, #1F5180 100%)", color: "#fff", padding: "3rem 1.5rem 3.5rem" }}>
-        <div style={{ maxWidth: 1180, margin: "0 auto" }}>
+        <div style={{ maxWidth: 1180, margin: "0 auto", display: "flex", flexWrap: "wrap", alignItems: "center", gap: "2rem 3rem" }}>
+          <div style={{ flex: "1.25 1 420px", minWidth: 0 }}>
           <div style={{ fontSize: "0.88rem", color: "rgba(255,255,255,0.75)", marginBottom: "0.6rem" }}>
             <Link href="/" style={{ color: "rgba(255,255,255,0.95)" }}>Home</Link> › Services › {service.shortTitle}
           </div>
           <span style={{ display: "inline-block", background: "rgba(255,255,255,0.18)", color: "#fff", padding: "0.3rem 0.8rem", borderRadius: 4, fontWeight: 700, fontSize: "0.8rem", letterSpacing: "0.05em", marginBottom: "0.6rem" }}>{service.isoTag}</span>
-          <h1 style={{ color: "#fff", maxWidth: 820 }}>{service.title}</h1>
+          <h1 style={{ color: "#fff" }}>{service.title}</h1>
           <p style={{ color: "#e3eaf2", maxWidth: 800, marginTop: "1rem", fontSize: "1.05rem" }}>{service.intro}</p>
+          </div>
+          {image && (
+            <div style={{ flex: "1 1 340px", minWidth: 0 }}>
+              <Image src={image} alt={imageAlt || service.shortTitle} width={1600} height={900} sizes="(max-width: 900px) 100vw, 520px" priority style={{ width: "100%", height: "auto", aspectRatio: "16 / 9", objectFit: "cover", display: "block", borderRadius: 12, boxShadow: "0 16px 40px rgba(0,0,0,0.35)" }} />
+            </div>
+          )}
         </div>
       </section>
 
-      {image && (
-        <div style={{ maxWidth: 1180, margin: "0 auto", padding: "0 1.5rem", marginTop: "-2rem" }}>
-          <Image src={image} alt={imageAlt || service.shortTitle} width={1600} height={900} sizes="(max-width: 1180px) 100vw, 1180px" priority style={{ width: "100%", height: "auto", objectFit: "cover", borderRadius: 10, boxShadow: "0 6px 20px rgba(11,37,69,0.18)" }} />
-        </div>
-      )}
-
-      <section style={{ padding: image ? "2.5rem 1.5rem 3.5rem" : "3.5rem 1.5rem" }}>
+      <section style={{ padding: "3.5rem 1.5rem" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto", display: "grid", gridTemplateColumns: "2fr 1fr", gap: "3rem" }}>
           <div className="service-main">{children}</div>
           <aside style={{ background: "#fff", padding: "1.5rem", borderRadius: 10, border: "1px solid #E3E7EE", height: "fit-content", position: "sticky", top: 90 }}>
