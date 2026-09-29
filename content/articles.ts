@@ -161,7 +161,7 @@ export const articles: Article[] = [
       { type: "h2", text: "Red Flag 4: Method Suitability is Older Than the Device Family" },
       { type: "p", text: "The MS was run when the device was prototyped. Production-equivalent material wasn't tested. Fix: MS should reflect production materials, not engineering builds." },
       { type: "h2", text: "Red Flag 5: Method Suitability Doesn't Cover All Six Indicators" },
-      { type: "p", text: "USP <71> specifies six indicator organisms. The MS only ran four (skipped C. sporogenes and A. brasiliensis for \"convenience\"). Fix: run all six per USP <71>." },
+      { type: "p", text: "The standard indicator panel includes six organisms. The MS only ran four (skipped C. sporogenes and A. brasiliensis for \"convenience\"). Fix: run all six." },
       { type: "h2", text: "How Boulder BioLabs Helps" },
       { type: "p", text: "Method suitability is bundled into every sterility program by default. We won't release a sterility result against a stale or missing MS — not to save a week." },
       { type: "cta", text: "Audit your method suitability coverage" },

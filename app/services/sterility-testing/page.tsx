@@ -6,9 +6,8 @@ const service = getServiceBySlug("sterility-testing")!;
 export const metadata: Metadata = { title: service.metaTitle, description: service.metaDescription };
 
 const faqs = [
-  { q: "Do you offer rapid sterility (4-hour cycle release)?", a: "Yes. Boulder BioLabs offers 4-hour cycle release using rapid-readout biological indicators. For BI-based release programs, this is faster than the 6-day RMM offered by national labs or traditional 7-day BI incubation. For programs requiring USP <71> product sterility testing, traditional 14-day incubation applies." },
-  { q: "Is method suitability required for sterility testing?", a: "Yes. Method suitability (B/F) is a regulatory prerequisite under ISO 11737-2 and USP <71>. We bundle it into every new sterility program by default." },
-  { q: "What's the typical turnaround for USP <71> testing?", a: "Standard USP <71> sterility testing requires 14-day incubation. The clock starts the day samples are received — for Boulder Sterilization clients, that's the day the cycle ends." },
+  { q: "Do you offer rapid sterility (4-hour cycle release)?", a: "Yes. Boulder BioLabs offers 4-hour cycle release using rapid-readout biological indicators. For BI-based release programs, this is faster than the 6-day RMM offered by national labs or traditional 7-day BI incubation." },
+  { q: "Is method suitability required for sterility testing?", a: "Yes. Method suitability (B/F) is a regulatory prerequisite under ISO 11737-2. We bundle it into every new sterility program by default." },
 ];
 
 export default function SterilityTestingPage() {
@@ -28,16 +27,15 @@ export default function SterilityTestingPage() {
       </ul>
 
       <div style={{ background: "#F2F4F7", borderLeft: "4px solid #2968A0", padding: "1.5rem 1.8rem", borderRadius: 6, margin: "1.5rem 0" }}>
-        <h3 style={{ color: "#0B2545", marginTop: 0 }}>Two Release Pathways: 4-Hour BI Release or USP &lt;71&gt; 14-Day Testing</h3>
-        <p><strong>For BI-based release programs:</strong> Boulder BioLabs offers <strong>4-hour cycle release using rapid-readout biological indicators</strong>. Faster than the typical 6-day RMM offered by national labs, traditional 7-day BI incubation, and dramatically faster than 14-day USP &lt;71&gt; sterility testing.</p>
-        <p><strong>For programs requiring USP &lt;71&gt; product sterility testing</strong> (class III implants, CSF-contacting devices, certain blood-contact applications): we run the traditional 14-day method, with the clock starting on Day 0 thanks to co-location.</p>
+        <h3 style={{ color: "#0B2545", marginTop: 0 }}>4-Hour BI Release</h3>
+        <p><strong>For BI-based release programs:</strong> Boulder BioLabs offers <strong>4-hour cycle release using rapid-readout biological indicators</strong>. Faster than the typical 6-day RMM offered by national labs, and traditional 7-day BI incubation.</p>
       </div>
 
       <h2>Our Process</h2>
       <ol>
         <li><strong>Sample receipt and accessioning.</strong> Chain of custody documented in our LIMS.</li>
         <li><strong>Cleanroom testing.</strong> Performed in ISO Class 5 environment.</li>
-        <li><strong>Incubation</strong> per USP &lt;71&gt; / ISO 11737-2.</li>
+        <li><strong>Incubation</strong> per ISO 11737-2.</li>
         <li><strong>Result interpretation</strong> — positives sub-cultured to genus level.</li>
         <li><strong>Reporting</strong> issued under our ISO 13485 QMS.</li>
       </ol>
