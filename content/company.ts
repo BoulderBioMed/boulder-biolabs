@@ -6,7 +6,7 @@ export const company = {
   phoneHref: "tel:3035311238",
   email: "info@boulderiq.com",
   emailHref: "mailto:info@boulderiq.com",
-  complianceDisclosure: "Boulder BioLabs operates microbiology testing protocols aligned with ISO 11737-1/2, USP <71>, USP <85>, and ISO 10993-7 under the Boulder BioMed ISO 13485 quality management system. Lab-level method accreditations (A2LA, ISO 17025) are in progress.",
+  complianceDisclosure: "Boulder BioLabs operates microbiology testing protocols aligned with ISO 11737-1/2, USP <85>, and ISO 10993-7 under the Boulder BioMed ISO 13485 quality management system. Lab-level method accreditations (A2LA, ISO 17025) are in progress.",
 };
 
 export const family = [

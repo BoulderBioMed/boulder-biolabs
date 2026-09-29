@@ -22,7 +22,7 @@ export const pdfs: PdfLeadMagnet[] = [
     file: "/downloads/boulder-biolabs-sterility-readiness-checklist.pdf",
     audience: "QA leads preparing an EO sterilization validation",
     insideBullets: [
-      "8-item pre-validation checklist tied to ISO 11737-1, ISO 11135, and USP <71>",
+      "8-item pre-validation checklist tied to ISO 11737-1 and ISO 11135",
       "Common 483-finding pitfalls and how to avoid them",
       "When method suitability has to be re-run (material changes, geometry changes)",
       "How Boulder BioLabs bundles method suitability with every sterility program",

@@ -49,7 +49,7 @@ export function Footer() {
           </div>
         </div>
         <div style={{ background: "rgba(255,255,255,0.05)", padding: "1rem 1.2rem", borderRadius: 6, fontSize: "0.82rem", color: "rgba(255,255,255,0.7)", lineHeight: 1.5, marginBottom: "1.5rem" }}>
-          Boulder BioLabs operates microbiology testing protocols aligned with ISO 11737-1/2, USP &lt;71&gt;, USP &lt;85&gt;, and ISO 10993-7 under the Boulder BioMed ISO 13485 quality management system. Lab-level method accreditations (A2LA, ISO 17025) are in progress.
+          Boulder BioLabs operates microbiology testing protocols aligned with ISO 11737-1/2, USP &lt;85&gt;, and ISO 10993-7 under the Boulder BioMed ISO 13485 quality management system. Lab-level method accreditations (A2LA, ISO 17025) are in progress.
         </div>
         <div style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: "1rem", color: "rgba(255,255,255,0.6)", fontSize: "0.85rem" }}>
           <span>© 2026 Boulder BioLabs · Part of the Boulder BioMed family of companies.</span>
