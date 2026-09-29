@@ -24,7 +24,6 @@ export default function HomePage() {
           <div style={{ display: "flex", gap: "0.8rem", flexWrap: "wrap" }}>
             <Link href="/contact" className="btn btn-primary">Request a Quote</Link>
             <Link href="/integrated-testing" className="btn btn-secondary" style={{ color: "#fff", borderColor: "#fff" }}>See How Co-Location Works</Link>
-            <Link href="/#services" className="btn btn-secondary" style={{ color: "#fff", borderColor: "#fff" }}>Explore Services</Link>
           </div>
           </div>
           <div style={{ flex: "1 1 340px", minWidth: 0 }}>
