@@ -11,8 +11,9 @@ export default function HomePage() {
       {/* Hero */}
       <section style={{ background: "linear-gradient(135deg, #0B2545 0%, #061A33 100%)", color: "#fff", padding: "4.5rem 1.5rem 5rem", position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", top: -100, right: -100, width: 400, height: 400, background: "radial-gradient(circle, rgba(41,104,160,0.25) 0%, transparent 70%)", borderRadius: "50%" }} />
-        <div style={{ maxWidth: 1180, margin: "0 auto", position: "relative", zIndex: 2 }}>
-          <h1 style={{ color: "#fff", maxWidth: 820 }}>Microbiology Testing for Medical Devices — On the Same Campus as Your Sterilizer.</h1>
+        <div style={{ maxWidth: 1180, margin: "0 auto", position: "relative", zIndex: 2, display: "flex", flexWrap: "wrap", alignItems: "center", gap: "2.5rem 3rem" }}>
+          <div style={{ flex: "1.25 1 420px", minWidth: 0 }}>
+          <h1 style={{ color: "#fff" }}>Microbiology Testing for Medical Devices — On the Same Campus as Your Sterilizer.</h1>
           <p style={{ fontSize: "1.2rem", color: "#cfd8e3", maxWidth: 760, marginBottom: "1.2rem", fontWeight: 500 }}>
             Sterility, bioburden, endotoxin, and EO/CD residuals testing — co-located with Boulder Sterilization. <strong>4-hour cycle release with rapid-readout biological indicators.</strong> No shipping. No chain-of-custody gap. Days off your validation timeline.
           </p>
@@ -23,16 +24,13 @@ export default function HomePage() {
             <Link href="/contact" className="btn btn-primary">Request a Quote</Link>
             <Link href="/integrated-testing" className="btn btn-secondary" style={{ color: "#fff", borderColor: "#fff" }}>See How Co-Location Works</Link>
           </div>
+          </div>
+          <div style={{ flex: "1 1 340px", minWidth: 0 }}>
+            <Image src="/img/bbl-hero-lab-cleanroom.png" alt="Boulder BioLabs cleanroom on the Boulder Sterilization campus" width={2100} height={900} sizes="(max-width: 900px) 100vw, 520px" priority style={{ width: "100%", height: "auto", aspectRatio: "16 / 9", objectFit: "cover", display: "block", borderRadius: 12, boxShadow: "0 16px 40px rgba(0,0,0,0.35)" }} />
+          </div>
         </div>
       </section>
 
-      
-      {/* Hero image banner */}
-      <section style={{ background: "#061A33", padding: "0 1.5rem", marginTop: "-2px" }}>
-        <div style={{ maxWidth: 1180, margin: "0 auto" }}>
-          <Image src="/img/bbl-hero-lab-cleanroom.png" alt="Boulder BioLabs cleanroom on the Boulder Sterilization campus" width={2100} height={900} sizes="(max-width: 1180px) 100vw, 1180px" priority style={{ width: "100%", height: "auto", objectFit: "cover", display: "block", marginTop: "-3rem", borderRadius: 12, boxShadow: "0 16px 40px rgba(0,0,0,0.35)" }} />
-        </div>
-      </section>
 
 {/* Three Pillars */}
       <section style={{ padding: "3.5rem 1.5rem" }}>
