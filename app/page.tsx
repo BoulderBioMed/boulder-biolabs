@@ -13,6 +13,7 @@ export default function HomePage() {
         <div style={{ position: "absolute", top: -100, right: -100, width: 400, height: 400, background: "radial-gradient(circle, rgba(41,104,160,0.25) 0%, transparent 70%)", borderRadius: "50%" }} />
         <div style={{ maxWidth: 1180, margin: "0 auto", position: "relative", zIndex: 2, display: "flex", flexWrap: "wrap", alignItems: "center", gap: "2.5rem 3rem" }}>
           <div style={{ flex: "1.25 1 420px", minWidth: 0 }}>
+          <p style={{ color: "#5B8FC7", fontSize: "0.95rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", margin: "0 0 0.8rem" }}>Medical Device Microbiology Testing</p>
           <h1 style={{ color: "#fff" }}>Microbiology Testing for Medical Devices — On the Same Campus as Your Sterilizer.</h1>
           <p style={{ fontSize: "1.2rem", color: "#cfd8e3", maxWidth: 760, marginBottom: "1.2rem", fontWeight: 500 }}>
             Sterility, bioburden, endotoxin, and EO/CD residuals testing — co-located with Boulder Sterilization. <strong>4-hour cycle release with rapid-readout biological indicators.</strong> No shipping. No chain-of-custody gap. Days off your validation timeline.
