@@ -19,10 +19,15 @@ export default function IntegratedPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
 
       <section style={{ background: "linear-gradient(135deg, #0B2545 0%, #061A33 100%)", color: "#fff", padding: "4.5rem 1.5rem 5rem" }}>
-        <div style={{ maxWidth: 1180, margin: "0 auto" }}>
-          <h1 style={{ color: "#fff", maxWidth: 820 }}>Sterilize. Test. Release. All on One Campus.</h1>
+        <div style={{ maxWidth: 1180, margin: "0 auto", display: "flex", flexWrap: "wrap", alignItems: "center", gap: "2.5rem 3rem" }}>
+          <div style={{ flex: "1.25 1 420px", minWidth: 0 }}>
+          <h1 style={{ color: "#fff" }}>Sterilize. Test. Release. All on One Campus.</h1>
           <p style={{ fontSize: "1.2rem", color: "#cfd8e3", maxWidth: 760, marginBottom: "1.8rem", fontWeight: 500 }}>The Boulder BioMed integrated pipeline cuts weeks off medical device validation — without sacrificing data integrity or audit defensibility.</p>
           <Link href="/contact" className="btn btn-primary">Request a Quote</Link>
+          </div>
+          <div style={{ flex: "1 1 340px", minWidth: 0 }}>
+            <Image src="/img/sterilization-to-test-transfer.png" alt="Sterilization-to-test transfer on the Boulder BioMed campus" width={1600} height={900} sizes="(max-width: 900px) 100vw, 520px" priority style={{ width: "100%", height: "auto", aspectRatio: "16 / 9", objectFit: "cover", display: "block", borderRadius: 12, boxShadow: "0 16px 40px rgba(0,0,0,0.35)" }} />
+          </div>
         </div>
       </section>
 
@@ -32,7 +37,6 @@ export default function IntegratedPage() {
           <p>For most medical device manufacturers, the validation timeline looks like this. Devices are manufactured in one city, packaged in another, sent to a contract sterilizer in a third, and then shipped — often across the country — to a contract microbiology lab in a fourth. Each transition adds days of transit, paperwork, and chain-of-custody risk. New device introductions that should take a quarter end up taking three.</p>
           <p><strong>This is the problem Boulder BioMed was built to solve.</strong></p>
 
-          <Image src="/img/sterilization-to-test-transfer.png" alt="Sterilization-to-test transfer on the Boulder BioMed campus" width={1600} height={900} sizes="(max-width: 1180px) 100vw, 1180px" style={{ width: "100%", height: "auto", objectFit: "cover", borderRadius: 10, boxShadow: "0 6px 20px rgba(11,37,69,0.18)", margin: "1.5rem 0 0.5rem" }} />
           <h2>The Boulder BioMed Solution — Co-Location</h2>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 0.1fr 1fr 0.1fr 1fr", gap: "1rem", margin: "2rem 0", alignItems: "stretch" }}>
             <div style={{ background: "#fff", border: "1px solid #E3E7EE", borderRadius: 10, padding: "1.5rem", textAlign: "center" }}>
